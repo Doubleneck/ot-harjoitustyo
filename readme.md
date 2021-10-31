@@ -10,4 +10,5 @@ Tässä testaillaan vähän *kursivointia* ja **lihavointia** Markdown syntaksis
 - [x] Ekan viikon tehtävät
 - [ ] Tokan viikon tehtävät
 
+Merge conflict -muutos tässä.
 
