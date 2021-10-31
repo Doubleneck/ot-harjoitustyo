@@ -103,3 +103,5 @@ Date:   Sun Oct 31 15:56:15 2021 +0200
  tiedosto.txt | 0
  1 file changed, 0 insertions(+), 0 deletions(-)
 anttivuorenmaa@Anttis-Mac-mini ot_viikko1 % 
+
+Lisätty rivi (merge conflict)
