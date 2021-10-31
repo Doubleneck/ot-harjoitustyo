@@ -1,0 +1,105 @@
+commit fc4e26e456871ba2fd6e779f87f6654762032118
+Author: Doubleneck <antti.vuorenmaa@kolumbus.fi>
+Date:   Sun Oct 31 16:30:23 2021 +0200
+
+    poistettu tiedostot/file1, uudelleennimetty file2 -> file22
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 28e9ebbdbd469e7698403211ac47381493382ef9
+Author: Doubleneck <antti.vuorenmaa@kolumbus.fi>
+Date:   Sun Oct 31 16:19:28 2021 +0200
+
+    lisätty dir tiedostoja
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit a83a078666371562b684115831af27b513b7657c
+Author: Doubleneck <antti.vuorenmaa@kolumbus.fi>
+Date:   Sun Oct 31 16:14:54 2021 +0200
+
+    muokattu eka.txt, kolmas.txt
+
+ eka.txt    | 4 ++--
+ kolmas.txt | 2 +-
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+commit fee3099af0b6b4e98cb4d3588d6f9a5c66af3a14
+Author: Doubleneck <antti.vuorenmaa@kolumbus.fi>
+Date:   Sun Oct 31 16:12:41 2021 +0200
+
+    uudelleennimeä tiedosto.txt -> eka.txt
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 94d044ac391238247b3bbad1f73d5af819266247
+Author: Doubleneck <antti.vuorenmaa@kolumbus.fi>
+Date:   Sun Oct 31 16:10:41 2021 +0200
+
+    poistettu toinen.txt
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 6a9e5daed5a550b47d4e073d8d2021ac8697c58f
+Author: Doubleneck <antti.vuorenmaa@kolumbus.fi>
+Date:   Sun Oct 31 16:04:59 2021 +0200
+
+    lisätty tekstiä tiedosto.txt
+
+ tiedosto.txt | 18 +++++++++++++++++-
+ 1 file changed, 17 insertions(+), 1 deletion(-)
+
+commit 731bfb15a29c1fa9d7d95741c598ef53c64095f9
+Author: Doubleneck <antti.vuorenmaa@kolumbus.fi>
+Date:   Sun Oct 31 16:02:26 2021 +0200
+
+    lisätty dir stuffit
+
+ stuff/stuffitiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 600d3b05c1284224d56b64a1c5edaf43d3756e78
+Author: Doubleneck <antti.vuorenmaa@kolumbus.fi>
+Date:   Sun Oct 31 16:00:39 2021 +0200
+
+    muokattu toinen.txt & kolmas.txt
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit a48fe3bdf83a7888cae7d33d3212ef3a98b3760f
+Author: Doubleneck <antti.vuorenmaa@kolumbus.fi>
+Date:   Sun Oct 31 15:59:36 2021 +0200
+
+    lisätty kolmas.txt
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 22ba47745c151a85174cd028368ad482d59773fe
+Author: Doubleneck <antti.vuorenmaa@kolumbus.fi>
+Date:   Sun Oct 31 15:57:48 2021 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit fda18eec8c045deef5446accce26df05b6e2370a
+Author: Doubleneck <antti.vuorenmaa@kolumbus.fi>
+Date:   Sun Oct 31 15:56:15 2021 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+anttivuorenmaa@Anttis-Mac-mini ot_viikko1 % 
