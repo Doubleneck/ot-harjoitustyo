@@ -7,12 +7,12 @@ Lisäksi sovellus tallentaa tietokantaan tilastoa, kuinka paljon mitäkin laskut
 
 ## Käyttäjät
 
-Sovellukselle ei määritellä erikseen käyttäjiä. Tilaston pääsee näkemään vain komentoriviltä.
+Sovellukselle ei määritellä erikseen käyttäjiä. Tilaston pääsee näkemään komentoriviltä.
 
 ## Käyttöliittymäluonnos
 
 Sovellus koostuu yhdestä näkymästä, jossa on laskimen näppäimistö ja näyttö. 
-(Laskimen perustoiminnallisuus toteuteaan aluksi tekstikäyttöliittymällä komentoriviltä)
+(Laskimen perustoiminnallisuus toteutetaan aluksi tekstikäyttöliittymällä komentoriviltä)
 
 ## Perusversion tarjoama toiminnallisuus
 
