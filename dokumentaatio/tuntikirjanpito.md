@@ -2,6 +2,7 @@
 
 |pvm | h | mitä tein |
 |:--:|:--|:----|
-|yht |0  ||
+|10.11.|1| luotu vaatimusmäärittely & tuntikirjanpito|
+|yht |1  ||
 
 
