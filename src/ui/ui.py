@@ -6,8 +6,6 @@ class UI:
         pass
 
     def start():
-        print("haloo")
-        print(str(Calculator.count("2","+","3")))
         print("")
         print("***LASKINSOVELLUS***")
         print("lopeta valitsemalla q ja Enter \n")
@@ -23,25 +21,12 @@ class UI:
                     continue    
                 if select in ["+","-","*","/"]:     
                     number2 = input("Anna toinen luku: ")             
-                    result=Calculator.count(number1,select,number2)  
+                    result=Calculator.count_two_operands(number1,select,number2)  
                     break
                 else:
-                    result=Calculator.count(number1,select,number2) 
+                    result=Calculator.count_one_operands(number1,select) 
                     break
-               
-#            if select == "+":
-#                result = Operations.sum_func(number1,number2)
-#            if select == "-":
-#                result = Operations.sub_func(number1,number2)
-#            if select == "*":
-#                result = Operations.mul_func(number1,number2)
-#            if select == "/":
-#                result = Operations.div_func(number1,number2) 
-#            else:
-#                if select == "e":   
-#                    result = Operations.exp_func(number1)
-#                if select == "sq": 
-#                    result = Operations.sqrt_func(number1)
+            print("")
             if select in ["+","-","*","/"]:                          
                 print("TULOS: " + str(number1) + " " + str(select) + " " + str(number2) + " = " +str(result)+"\n")
             else:
