@@ -21,7 +21,7 @@ class Operations:
     def sqrt_func(number1:str):
         return sqrt(float(number1))
 
-    def get_pi():
-        return pi   
+#    def get_pi():
+#        return pi   
 
 
