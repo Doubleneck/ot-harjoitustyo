@@ -7,16 +7,16 @@ class Operations:
         return str(float(number1)+float(number2))
 
     def sub_func(number1:str, number2:str):
-        return str(float(number1)-float(number2))
+        return str(float(number1) - float(number2))
 
     def mul_func(number1:str, number2:str):
-        return str(float(number1)*float(number2))
+        return str(float(number1) * float(number2))
 
     def div_func(number1:str, number2:str):
-        return str(float(number1)/float(number2))
+        return str(float(number1) / float(number2))
 
     def exp_func(number1:str):
-        return str(float(number1)*float(number1))
+        return str(float(number1) * float(number1))
 
     def sqrt_func(number1:str):
         return str(sqrt(float(number1)))
