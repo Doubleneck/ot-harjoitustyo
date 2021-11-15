@@ -15,5 +15,8 @@ class TestCalculator(unittest.TestCase):
     def test_sub_positive_integer(self):        
         self.assertEqual(self.calculator.count_two_operands("-",5), "11.0")  
 
+    def test_div_positive_integer(self):        
+        self.assertEqual(self.calculator.count_two_operands("/",8), "2.0")     
+
     def test_sq(self):        
         self.assertEqual(self.calculator.count_one_operands("sq"), "4.0")      
