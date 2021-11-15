@@ -1,27 +1,31 @@
 from services.operations import Operations
 
-class Calculator:
-    # Konstruktori
+class Calculator:   
     def __init__(self):
-        pass
+        self.operand1 = "0"
 
-    def count_two_operands(number1: str, operator: str,number2:str):
-        operand1=float(number1)
-        operand2=float(number2)
+    def get_operand1(self):
+        return str(self.operand1)    
+
+    def set_operand1(self,number:str):
+        self.operand1 = number     
+        
+    def count_two_operands(self,operator: str,number2:str):
+        operand1 = self.operand1
+        operand2 = number2
         if operator == "+":
-            result = Operations.sum_func(operand1,operand2)
+            self.operand1 = Operations.sum_func(operand1,operand2)
         if operator == "-":
-            result = Operations.sub_func(number1,number2)
+            self.operand1  = Operations.sub_func(operand1,operand2)
         if operator == "*":
-            result = Operations.mul_func(number1,number2)
+            self.operand1  = Operations.mul_func(operand1,operand2)
         if operator == "/":
-            result = Operations.div_func(number1,number2) 
-        return result  
+            self.operand1  = Operations.div_func(operand1,operand2) 
+        return self.operand1  
 
-    def count_one_operands(number1: str, operator: str):
-        operand1=float(number1)
+    def count_one_operands(operator: str):
         if operator == "e":   
-            result = Operations.exp_func(number1)
+            result = Operations.exp_func(self.operand1)
         if operator == "sq": 
-            result = Operations.sqrt_func(number1)    
-        return result    
+            result = Operations.sqrt_func(self.operand1)    
+        return self.operand1 
