@@ -18,8 +18,8 @@ class Operations:
     def exp_func(number1:str):
         return str(float(number1)*float(number1))
 
-#    def sqrt_func(number1:str):
-#        return str(sqrt(float(number1)))
+    def sqrt_func(number1:str):
+        return str(sqrt(float(number1)))
 
 #    def get_pi():
 #        return pi   

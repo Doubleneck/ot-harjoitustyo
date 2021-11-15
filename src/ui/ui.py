@@ -26,7 +26,7 @@ class UI:
                     result=calculator.count_two_operands(select,number2)
                     break
                 else:
-                    result=calculator.count_one_operands(select) 
+                    result=calculator.count_one_operands(select)
                     break
             print("")
             if select in ["+","-","*","/"]:                          

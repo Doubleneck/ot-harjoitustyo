@@ -23,9 +23,9 @@ class Calculator:
             self.operand1  = Operations.div_func(operand1,operand2) 
         return self.operand1  
 
-    def count_one_operands(operator: str):
+    def count_one_operands(self,operator: str):
         if operator == "e":   
-            result = Operations.exp_func(self.operand1)
+            self.operand1 = Operations.exp_func(self.operand1)
         if operator == "sq": 
-            result = Operations.sqrt_func(self.operand1)    
+            self.operand1 = Operations.sqrt_func(self.operand1)    
         return self.operand1 
