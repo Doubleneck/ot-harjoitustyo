@@ -7,6 +7,7 @@ authors = ["Doubleneck <antti.vuorenmaa@kolumbus.fi>"]
 [tool.poetry.dependencies]
 python = "^3.6"
 cowsay = "^4.0"
+invoke = "^1.6.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
