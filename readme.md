@@ -8,7 +8,7 @@ Sovelluksen toiminta on testattu Python-versiolla `3.6.0`.
 
 ## Dokumentaatio
 
-- [ ]käyttöohje
+- [käyttöohje](https://github.com/Doubleneck/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)  
 - [vaatimusmäärittely](https://github.com/Doubleneck/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)  
 - [tuntikirjanpito](https://github.com/Doubleneck/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 - [ ]Arkkitehtuurikuvaus
@@ -50,9 +50,5 @@ poetry run invoke coverage-report
 
 Raportti generoituu _htmlcov_-hakemistoon.
 
-### Pylint
 
-Tiedoston [.pylintrc](./.pylintrc) määrittelemät tarkistukset voi suorittaa komennolla:
-
-poetry run invoke lint
 
