@@ -1,24 +1,58 @@
-# Ohjelmistotekniikan harjoitustyö
+# Ohjelmistotekniikan harjoitustyö:laskin
 
-Tämä on harjoitustyöni ohjelmistotekniikan kurssille Helsingin Yliopistolla syksyllä 2021. Projektinani on ohjelmoida työpöytälaskin graafisella käyttöliittymällä. 
+Sovellus on työpöytälaskin graafisella käyttöliittymällä. 
 
-[vaatimusmäärittely](https://github.com/Doubleneck/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)  
-[tuntikirjanpito](https://github.com/Doubleneck/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+##  Python-versio:
 
-## Tehtävät
+Sovelluksen toiminta on testattu Python-versiolla `3.6.0`.
 
-### Viikko1
+## Dokumentaatio
 
-[gitlog.txt](https://github.com/Doubleneck/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)  
-[komentorivi.txt](https://github.com/Doubleneck/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
+- [ ]käyttöohje
+- [vaatimusmäärittely](https://github.com/Doubleneck/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)  
+- [tuntikirjanpito](https://github.com/Doubleneck/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+- [ ]Arkkitehtuurikuvaus
+- [ ]Testausdokumentti
 
-Tässä testaillaan vähän *kursivointia* ja **lihavointia** Markdown syntaksissa.
+## Asennus
 
-- [x] Ekan viikon tehtävät
-- [ ] Tokan viikon tehtävät
+1. Asenna riippuvuudet:
 
-Merge conflict -muutos tässä.
+poetry install
 
-### Viikko2
+(jos komento poetry herjaa, saatat tarvita ensin komennon:
 
-[coverage report](https://github.com/Doubleneck/ot-harjoitustyo/blob/master/laskarit/viikko2/coverage_report.png)
+ source $HOME/.poetry/env
+
+, että käyttämäsi shell löytää poetryn oikean polun)
+
+2. Tietokannan alustus (ei vielä käytössä):
+
+poetry run invoke build
+
+--> siirry poetryn virtuaaliympäristöön komennolla: poetry shell
+
+3. Sovelluksen käynnistys
+
+poetry run invoke start
+
+### Testaus
+
+Testaus suoritetaan virtuaaliympäristössä komennolla:
+
+poetry run invoke test
+
+### Testikattavuus
+
+Testikattavuusraportin voi generoida komennolla:
+
+poetry run invoke coverage-report
+
+Raportti generoituu _htmlcov_-hakemistoon.
+
+### Pylint
+
+Tiedoston [.pylintrc](./.pylintrc) määrittelemät tarkistukset voi suorittaa komennolla:
+
+poetry run invoke lint
+
