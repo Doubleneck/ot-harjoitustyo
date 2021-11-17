@@ -9,25 +9,25 @@ Lataa projektin [lähdekoodi](https://github.com/Doubleneck/ot-harjoitustyo) kon
 ## Ohjelman käynnistäminen:
 
 Asenna riippuvuudet:
-´´´bash
+```bash
 poetry install
-´´´
+```
 (jos komentoa poetry ei löydy, saatat tarvita ensin komennon:
-´´´bash
+```bash
  source $HOME/.poetry/env
-´´´
+```
 Tietokannan alustus (ei vielä käytössä):
-´´´bash
+```bash
 poetry run invoke build
-´´´
+```
 Siirry poetryn virtuaaliympäristöön komennolla: 
-´´´bash
+```bash
 poetry shell
-´´´
+```
 Sovelluksen käynnistys:
-´´´bash
+```bash
 poetry run invoke start
-´´´
+```
 ## Laskin:
 
 Anna laskimelle lukuja, ja se suorittaa valitsemiasi operaatioita. Ota huomioon, että kyseessä on dummy windows-tyypinen laskin, joka laskee annettuja operaatioita siinä järjestyksessä, kun ne annetaan. Eli laskin ei osaa laskea kertolaskua ennen summaa jne.
