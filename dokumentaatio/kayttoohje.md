@@ -12,9 +12,9 @@ Asenna riippuvuudet:
 ```bash
 poetry install
 ```
-(jos komentoa poetry ei löydy, saatat tarvita ensin komennon:
+Jos komentoa poetry ei löydy, saatat tarvita ensin komennon:
 ```bash
- source $HOME/.poetry/env
+source $HOME/.poetry/env
 ```
 Tietokannan alustus (ei vielä käytössä):
 ```bash
