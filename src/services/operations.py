@@ -13,7 +13,10 @@ class Operations:
         return str(float(number1) * float(number2))
 
     def div_func(number1:str, number2:str):
-        return str(float(number1) / float(number2))
+        try:
+            return str(float(number1) / float(number2))
+        except:
+             return "error div zero"
 
     def exp_func(number1:str):
         return str(float(number1) * float(number1))
