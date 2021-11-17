@@ -8,4 +8,5 @@
 |14.11.|3| TKinter graafisen käyttöliittymän peruslähtökohtien hahmottelua|
 |15.11.|2| Laskimen logiikkaa muokattu graafiseen käyttöliittymään ja testaamiseen sopivammaksi|
 |15.11.|1| Testauskonfiguraation laajentamista, lisää testejä|
-|yht |13 |
+|17.11.|2| Pylint asennettu, koodin siivoamista, funktioiden muokkaamista|
+|yht |15 |
