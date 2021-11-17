@@ -20,7 +20,7 @@ Sovelluksen toiminta on testattu Python-versiolla `3.6.0`.
 
 poetry install
 
-(jos komento poetry herjaa, saatat tarvita ensin komennon:
+(jos komentoa poetry ei löydy, saatat tarvita ensin komennon:
 
  source $HOME/.poetry/env
 
