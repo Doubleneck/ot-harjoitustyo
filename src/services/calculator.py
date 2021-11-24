@@ -3,12 +3,19 @@ from services.operations import Operations
 class Calculator:
     def __init__(self):
         self.operand1 = "0"
+        
 
     def get_operand1(self):
         return str(self.operand1)
 
     def set_operand1(self,number:str):
         self.operand1 = number
+
+    
+
+#    def get_negation(self,number:str):
+#        if 
+#        self.operand1 = number    
 
     def count_two_operands(self, operator:str, operand2:str):
         if operator == "+":
