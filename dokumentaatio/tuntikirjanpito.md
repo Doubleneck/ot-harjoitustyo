@@ -10,4 +10,5 @@
 |15.11.|1| Testauskonfiguraation laajentamista, lisää testejä|
 |17.11.|2| Pylint asennettu, koodin siivoamista, funktioiden muokkaamista|
 |17.11.|3| Tietokannan tuonnin valmistelua, koodin siivoamista, lisää testejä|
-|yht |18 |
+|24.11.|3| graafinen käyttöliittymä tuotu demona rinnalle, 1-op ja numeroiden luku toimii|
+|yht |21 |
