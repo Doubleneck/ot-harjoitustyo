@@ -3,4 +3,6 @@
 __pycache__
 /laskarit/viikko2/__MACOSX
 /laskarit/viikko2/maksukortti/src/.cache/v/cache
-
+.coverage
+htmlcov
+/src/.cache
