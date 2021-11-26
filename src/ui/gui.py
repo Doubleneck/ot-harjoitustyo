@@ -19,7 +19,7 @@ class GUI:
         calculator_screen = ttk.Label(master=self._root, textvariable=self._label_var)
 
         button_1 = ttk.Button(master=self._root,
-        text="test",command=lambda: self._set_result_click())
+        text="?",command=lambda: self._set_result_click())
         button_2 = ttk.Button(master=self._root,
         text="?",command=lambda: self._clear_button_click())
         button_3 = ttk.Button(master=self._root,
@@ -135,6 +135,9 @@ class GUI:
             self._set_result_click()
 
     def _two_operator_func_button_click(self, operator:str):
+        if self.read_number == "":
+            self.done = False  
+            self.read_number = self.calculator.get_operand1()
         if not self.done:
             self.operator = operator
             self.calculator.set_operand1(self.read_number)
@@ -152,7 +155,6 @@ class GUI:
         self.final_done = True
 
     def _set_result_click(self):
-        #self.calculator.set_operand1(self.calculator.get_operand1())
         self.done=False
         self.operator = ""
         self.read_number = self.calculator.get_operand1()
