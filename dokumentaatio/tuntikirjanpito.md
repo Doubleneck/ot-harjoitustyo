@@ -11,4 +11,6 @@
 |17.11.|2| Pylint asennettu, koodin siivoamista, funktioiden muokkaamista|
 |17.11.|3| Tietokannan tuonnin valmistelua, koodin siivoamista, lisää testejä|
 |24.11.|3| graafinen käyttöliittymä tuotu demona rinnalle, 1-op ja numeroiden luku toimii|
-|yht |21 |
+|25.11.|4| yrityksiä rakentaa kompleksisempi funktionaalisuus, paluu 2-operaattoriseen dummyyn|
+|26.11.|1| GUI käyttölogiikka muokattu, pakottaa laskemaan kaksi kerrallaan|
+|yht |26 |

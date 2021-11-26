@@ -24,7 +24,7 @@ Jos komentoa poetry ei löydy, saatat tarvita ensin komennon:
 ```bash
  source $HOME/.poetry/env
  ```
-2. Tietokannan alustus (ei vielä käytössä):
+2. Tietokannan alustus:
 ```bash
 poetry run invoke build
 ```
