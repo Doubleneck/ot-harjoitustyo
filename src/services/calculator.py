@@ -3,7 +3,6 @@ from services.operations import Operations
 class Calculator:
     def __init__(self):
         self.operand1 = "0"
-        
 
     def get_operand1(self):
         return str(self.operand1)

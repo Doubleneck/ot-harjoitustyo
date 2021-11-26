@@ -1,4 +1,4 @@
-from tkinter import StringVar, Tk, ttk, constants
+from tkinter import StringVar, ttk, constants
 from services.calculator import Calculator
 
 class GUI:
