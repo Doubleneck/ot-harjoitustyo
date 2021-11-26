@@ -13,6 +13,8 @@ class Calculator:
         self.operand1 = number
 
     def count_two_operands(self, operator:str, operand2:str):
+        if self.operand1 == "":
+            self.operand1 = 0
         self.calculator_repository.add_operation(operator)
         if operator == "+":
             self.operand1 = Operations.sum_func(self,self.operand1,operand2)
@@ -25,6 +27,8 @@ class Calculator:
         return self.operand1
 
     def count_one_operands(self, operator:str):
+        if self.operand1 == "":
+            self.operand1 = 0
         self.calculator_repository.add_operation(operator)
         if operator == "exp":
             self.operand1 = Operations.exp_func(self,self.operand1)
