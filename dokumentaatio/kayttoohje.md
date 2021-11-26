@@ -16,7 +16,7 @@ Jos komentoa poetry ei löydy, saatat tarvita ensin komennon:
 ```bash
 source $HOME/.poetry/env
 ```
-Tietokannan alustus (ei vielä käytössä):
+Tietokannan alustus:
 ```bash
 poetry run invoke build
 ```
@@ -30,4 +30,8 @@ poetry run invoke start
 ```
 ## Laskin:
 
-Anna laskimelle lukuja, ja se suorittaa valitsemiasi operaatioita. Ota huomioon, että kyseessä on dummy windows-tyypinen laskin, joka laskee annettuja operaatioita siinä järjestyksessä, kun ne annetaan. Eli laskin ei osaa laskea kertolaskua ennen summaa jne.
+Anna laskimelle lukuja, ja se suorittaa valitsemiasi operaatioita. Ota huomioon, että kyseessä on dummy windows-tyypinen laskin, joka laskee vain annettuja operaatioita yhden kerrallaan. Eli operaation jälkeen täytyy painaa "=" ja tuloksen jälkeen nollata laskin "c".
+
+Laskin tekee tietokantaan tilastoa käytetyistä operaatioista. Saat tilaston näkymään komentorivillä painamalla laskimen nappia "STAT"
+
+
