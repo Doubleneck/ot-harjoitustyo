@@ -23,6 +23,3 @@ class Operations:
 
     def sqrt_func(self, number1:str):
         return str(sqrt(float(number1)))
-
-#    def get_pi():
-#        return pi

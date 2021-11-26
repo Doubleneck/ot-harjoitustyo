@@ -26,13 +26,13 @@ class GUI:
         button_3 = ttk.Button(master=self._root,
         text="?",command=lambda: self._clear_button_click())
         button_4 = ttk.Button(master=self._root,
-        text="STAT",command=lambda: self._clear_button_click())
+        text="STAT",command=lambda: self._stat_button_click())
         button_5 = ttk.Button(master=self._root,
         text="C",command=lambda: self._clear_button_click())
         button_6 = ttk.Button(master=self._root,
         text="+/-",command=lambda: self._negation_button_click())
         button_7 = ttk.Button(master=self._root,
-        text="sq",command=lambda: self._sq_button_click())
+        text="sq",command=lambda: self._one_operator_func_button_click("sqrt"))
         button_8 = ttk.Button(master=self._root,
         text="/",command=lambda: self._two_operator_func_button_click("/"))
         button_9 = ttk.Button(master=self._root,
@@ -64,7 +64,7 @@ class GUI:
         button_22 = ttk.Button(master=self._root,
         text=".",command=lambda: self._number_button_click("."))
         button_23 = ttk.Button(master=self._root,
-        text="exp",command=lambda: self._exp_button_click())
+        text="exp",command=lambda: self._one_operator_func_button_click("exp"))
         button_24 = ttk.Button(master=self._root,
         text="=",command=lambda: self._equation_button_click())
 
@@ -127,17 +127,11 @@ class GUI:
                 self.read_number = str((int(self.read_number)*-1))
             self._label_var.set(self.read_number)
 
-    def _sq_button_click(self):
+    def _one_operator_func_button_click(self, operator:str):
         if not self.done:
             self.calculator.set_operand1(self.read_number)
-            self.read_number=self.calculator.count_one_operands("sq")
-            self._label_var.set(self.read_number)
-            self.done = True
-
-    def _exp_button_click(self):
-        if not self.done:
-            self.calculator.set_operand1(self.read_number)
-            self.read_number=self.calculator.count_one_operands("e")
+            #self.calculator.count_one_operands(operator)
+            self.read_number=self.calculator.count_one_operands(operator)
             self._label_var.set(self.read_number)
             self.done = True
 
@@ -151,4 +145,8 @@ class GUI:
 
     def _equation_button_click(self):
         self._label_var.set(self.calculator.count_two_operands(self.operator,self.read_number))
+        self.final_done = True
+
+    def _stat_button_click(self):
+        self.calculator.get_stats()
         self.final_done = True
