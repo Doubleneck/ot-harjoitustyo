@@ -13,7 +13,6 @@ class GUI:
         self.calculator = Calculator()
 
     def start(self):
-        
         self.calculator.set_operand1(0)
         self._label_var = StringVar()
         self._label_var.set(self.calculator.get_operand1())
@@ -106,7 +105,7 @@ class GUI:
                 elif self.read_number == "":
                     self.read_number = num
                 else:
-                    self.read_number = self.read_number + num   
+                    self.read_number = self.read_number + num
             self._label_var.set(self.read_number)
 
     def _clear_button_click(self):
@@ -131,7 +130,7 @@ class GUI:
         if not self.done:
             self.calculator.set_operand1(self.read_number)
             #self.calculator.count_one_operands(operator)
-            self.read_number=self.calculator.count_one_operands(operator)
+            self.read_number = self.calculator.count_one_operands(operator)
             self._label_var.set(self.read_number)
             self.done = True
 
@@ -148,5 +147,5 @@ class GUI:
         self.final_done = True
 
     def _stat_button_click(self):
-        self.calculator.get_stats()
+        self.calculator.print_stats()
         self.final_done = True

@@ -13,16 +13,15 @@ class Calculator:
         self.operand1 = number
 
     def count_two_operands(self, operator:str, operand2:str):
-        
         self.calculator_repository.add_operation(operator)
-        if operator == "+":            
+        if operator == "+":
             self.operand1 = Operations.sum_func(self,self.operand1,operand2)
         if operator == "-":
-            self.operand1  = Operations.sub_func(self,self.operand1,operand2)
+            self.operand1 = Operations.sub_func(self,self.operand1,operand2)
         if operator == "*":
-            self.operand1  = Operations.mul_func(self,self.operand1,operand2)
+            self.operand1 = Operations.mul_func(self,self.operand1,operand2)
         if operator == "/":
-            self.operand1  = Operations.div_func(self,self.operand1,operand2)
+            self.operand1 = Operations.div_func(self,self.operand1,operand2)
         return self.operand1
 
     def count_one_operands(self, operator:str):
@@ -33,8 +32,6 @@ class Calculator:
             self.operand1 = Operations.sqrt_func(self,self.operand1)
         return self.operand1
 
-    def get_stats(self):
+    def print_stats(self):
         calculator_repository = CalculatorRepository(get_database_connection())
         calculator_repository.stats()
-        
-        
