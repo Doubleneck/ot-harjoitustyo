@@ -13,4 +13,5 @@
 |24.11.|3| graafinen käyttöliittymä tuotu demona rinnalle, 1-op ja numeroiden luku toimii|
 |25.11.|4| yrityksiä rakentaa kompleksisempi funktionaalisuus, paluu 2-operaattoriseen dummyyn|
 |26.11.|1| GUI käyttölogiikka muokattu, pakottaa laskemaan kaksi kerrallaan|
-|yht |26 |
+|26.11.|5| tietokanta otettu käyttöön, ongelma Poetryn ja db-repositorion kanssa ratkottu, koodin siivoamista|
+|yht |31|
