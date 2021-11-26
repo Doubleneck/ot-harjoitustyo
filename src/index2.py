@@ -1,9 +1,7 @@
-from tkinter import Tk
-from ui.gui import GUI
+from ui.ui import UI
 
-window = Tk()
-window.resizable(0,0)
-window.title("Dummy Calculator")
-gui = GUI(window)
-gui.start()
-window.mainloop()
+def main():
+    UI.start()
+
+if __name__ == '__main__':
+    main()
