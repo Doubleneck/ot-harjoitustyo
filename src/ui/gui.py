@@ -5,10 +5,12 @@ class GUI:
     def __init__(self, root):
         self._root = root
         self._label_var = None
-        self.read_number=""
-        self.operand=""
-        self.operator=""
-        
+        self.read_number = ""
+        self.operand = ""
+        self.operator = ""
+        self.final_done = False
+        self.done = False
+
     def start(self):
         self.calculator = Calculator()
         self.calculator.set_operand1(0)
@@ -59,57 +61,62 @@ class GUI:
         button_19.grid(row=5, column=2)
         button_20.grid(row=5, column=3)
 
-    def _number_button_click(self,num):
-        dot = "."
-        if num == dot:
-            if dot not in self.read_number:
-                self.read_number = self.read_number+num
-        else:
-            if self.read_number == "0" :
-                self.read_number = num
-            elif self.read_number == "":     
-                self.read_number = num
+    def _number_button_click(self,num): 
+        if not self.final_done:      
+            dot = "."
+            if num == dot:
+                if dot not in self.read_number:
+                    self.read_number = self.read_number+num
             else:
-                 self.read_number = self.read_number + num
-        self._label_var.set(self.read_number)
+                if self.read_number == "0" :
+                    self.read_number = num
+                elif self.read_number == "":     
+                    self.read_number = num
+                else:
+                    self.read_number = self.read_number + num                            
+            self._label_var.set(self.read_number)
 
     def _clear_button_click(self):
         self.calculator.set_operand1("0")
+        self.done=False
         self.operator = ""
         self.read_number = self.calculator.get_operand1()
         self._label_var.set(self.read_number) 
+        self.final_done = False
 
     def _negation_button_click(self):
-        if self.read_number != "0":
-            dot="."
+        if not self.final_done:
+            if self.read_number != "0":
+                dot="."
             if dot in self.read_number:
                 self.read_number = str((float(self.read_number)*-1))
             else:
                 self.read_number = str((int(self.read_number)*-1))
-        self._label_var.set(self.read_number)
+            self._label_var.set(self.read_number)
 
     def _sq_button_click(self):
-        self.calculator.set_operand1(self.read_number)
-        self.read_number=self.calculator.count_one_operands("sq")       
-        self._label_var.set(self.read_number)
+        if not self.done:
+            self.calculator.set_operand1(self.read_number)
+            self.read_number=self.calculator.count_one_operands("sq")       
+            self._label_var.set(self.read_number)
+            self.done = True
 
     def _exp_button_click(self):
-        self.calculator.set_operand1(self.read_number)
-        self.read_number=self.calculator.count_one_operands("e")          
-        self._label_var.set(self.read_number)
+        if not self.done:
+            self.calculator.set_operand1(self.read_number)
+            self.read_number=self.calculator.count_one_operands("e")          
+            self._label_var.set(self.read_number)
+            self.done = True
 
     def _two_operator_func_button_click(self, operator:str):
-        if self.operator == "":
+        if not self.done:
             self.operator = operator     
             self.calculator.set_operand1(self.read_number)
-            self.read_number = ""
-        else:
-            operand2 = self.read_number
-            self.calculator.count_two_operands(self.operator,operand2)
-            self.read_number = self.calculator.get_operand1()
-        self._label_var.set(self.read_number)
+            self.read_number = ""               
+            self._label_var.set(self.read_number)
+            self.done = True
 
-    def _equation_button_click(self):
-        if self.operator != "":
-            res=self.calculator.count_two_operands(self.operator,self.read_number)
-            self._label_var.set(res)
+    def _equation_button_click(self):    
+        self._label_var.set(self.calculator.count_two_operands(self.operator,self.read_number))
+        self.final_done = True
+        
