@@ -26,8 +26,6 @@ class Calculator:
         return self.operand1
 
     def count_one_operands(self, operator:str):
-        #calculator_repository2 = CalculatorRepository(get_database_connection())
-        #
         self.calculator_repository.add_operation(operator)
         if operator == "exp":
             self.operand1 = Operations.exp_func(self,self.operand1)

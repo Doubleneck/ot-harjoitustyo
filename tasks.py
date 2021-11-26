@@ -13,6 +13,10 @@ def test(ctx):
     ctx.run("pytest src")
 
 @task
+def build(ctx):
+    ctx.run("python3 src/initialize_database.py")
+
+@task
 def coverage(ctx):
     ctx.run("coverage run --branch -m pytest src")
 
