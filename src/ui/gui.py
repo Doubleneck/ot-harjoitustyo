@@ -136,7 +136,7 @@ class GUI:
 
     def _two_operator_func_button_click(self, operator:str):
         if self.read_number == "":
-            self.done = False  
+            self.done = False
             self.read_number = self.calculator.get_operand1()
         if not self.done:
             self.operator = operator
