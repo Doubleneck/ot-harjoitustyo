@@ -10,35 +10,64 @@ class GUI:
         self.operator = ""
         self.final_done = False
         self.done = False
+        self.calculator = Calculator()
 
     def start(self):
-        self.calculator = Calculator()
+        
         self.calculator.set_operand1(0)
         self._label_var = StringVar()
         self._label_var.set(self.calculator.get_operand1())
         calculator_screen = ttk.Label(master=self._root, textvariable=self._label_var)
 
-        button_1 = ttk.Button(master=self._root, text="C",command=lambda: self._clear_button_click())
-        button_2 = ttk.Button(master=self._root, text="+/-",command=lambda: self._negation_button_click())
-        button_3 = ttk.Button(master=self._root, text="sq",command=lambda: self._sq_button_click())
-        button_4 = ttk.Button(master=self._root, text="/",command=lambda: self._two_operator_func_button_click("/"))
-        button_5 = ttk.Button(master=self._root, text="7",command=lambda: self._number_button_click("7"))
-        button_6 = ttk.Button(master=self._root, text="8",command=lambda: self._number_button_click("8"))
-        button_7 = ttk.Button(master=self._root, text="9",command=lambda: self._number_button_click("9"))
-        button_8 = ttk.Button(master=self._root, text="*",command=lambda: self._two_operator_func_button_click("*"))
-        button_9 = ttk.Button(master=self._root, text="4",command=lambda: self._number_button_click("4"))
-        button_10 = ttk.Button(master=self._root, text="5",command=lambda: self._number_button_click("5"))
-        button_11 = ttk.Button(master=self._root, text="6",command=lambda: self._number_button_click("6"))
-        button_12 = ttk.Button(master=self._root, text="-",command=lambda: self._two_operator_func_button_click("-"))
-        button_13 = ttk.Button(master=self._root, text="1",command=lambda: self._number_button_click("1"))
-        button_14 = ttk.Button(master=self._root, text="2",command=lambda: self._number_button_click("2"))
-        button_15 = ttk.Button(master=self._root, text="3",command=lambda: self._number_button_click("3"))
-        button_16 = ttk.Button(master=self._root, text="+",command=lambda: self._two_operator_func_button_click("+"))
-        button_17 = ttk.Button(master=self._root, text="0",command=lambda: self._number_button_click("0"))
-        button_18 = ttk.Button(master=self._root, text=".",command=lambda: self._number_button_click("."))
-        button_19 = ttk.Button(master=self._root, text="exp",command=lambda: self._exp_button_click())
-        button_20 = ttk.Button(master=self._root, text="=",command=lambda: self._equation_button_click())
-       
+        button_1 = ttk.Button(master=self._root,
+        text="?",command=lambda: self._clear_button_click())
+        button_2 = ttk.Button(master=self._root,
+        text="?",command=lambda: self._clear_button_click())
+        button_3 = ttk.Button(master=self._root,
+        text="?",command=lambda: self._clear_button_click())
+        button_4 = ttk.Button(master=self._root,
+        text="STAT",command=lambda: self._clear_button_click())
+        button_5 = ttk.Button(master=self._root,
+        text="C",command=lambda: self._clear_button_click())
+        button_6 = ttk.Button(master=self._root,
+        text="+/-",command=lambda: self._negation_button_click())
+        button_7 = ttk.Button(master=self._root,
+        text="sq",command=lambda: self._sq_button_click())
+        button_8 = ttk.Button(master=self._root,
+        text="/",command=lambda: self._two_operator_func_button_click("/"))
+        button_9 = ttk.Button(master=self._root,
+        text="7",command=lambda: self._number_button_click("7"))
+        button_10 = ttk.Button(master=self._root,
+        text="8",command=lambda: self._number_button_click("8"))
+        button_11 = ttk.Button(master=self._root,
+        text="9",command=lambda: self._number_button_click("9"))
+        button_12 = ttk.Button(master=self._root,
+        text="*",command=lambda: self._two_operator_func_button_click("*"))
+        button_13 = ttk.Button(master=self._root,
+        text="4",command=lambda: self._number_button_click("4"))
+        button_14 = ttk.Button(master=self._root,
+        text="5",command=lambda: self._number_button_click("5"))
+        button_15 = ttk.Button(master=self._root,
+        text="6",command=lambda: self._number_button_click("6"))
+        button_16 = ttk.Button(master=self._root,
+        text="-",command=lambda: self._two_operator_func_button_click("-"))
+        button_17 = ttk.Button(master=self._root,
+        text="1", command=lambda: self._number_button_click("1"))
+        button_18 = ttk.Button(master=self._root,
+        text="2",command=lambda: self._number_button_click("2"))
+        button_19 = ttk.Button(master=self._root,
+        text="3",command=lambda: self._number_button_click("3"))
+        button_20 = ttk.Button(master=self._root,
+        text="+",command=lambda: self._two_operator_func_button_click("+"))
+        button_21 = ttk.Button(master=self._root,
+        text="0",command=lambda: self._number_button_click("0"))
+        button_22 = ttk.Button(master=self._root,
+        text=".",command=lambda: self._number_button_click("."))
+        button_23 = ttk.Button(master=self._root,
+        text="exp",command=lambda: self._exp_button_click())
+        button_24 = ttk.Button(master=self._root,
+        text="=",command=lambda: self._equation_button_click())
+
         calculator_screen.grid(row=0,column=0,columnspan=4,sticky=(constants.E))
         button_1.grid(row=1, column=0)
         button_2.grid(row=1, column=1)
@@ -60,9 +89,13 @@ class GUI:
         button_18.grid(row=5, column=1)
         button_19.grid(row=5, column=2)
         button_20.grid(row=5, column=3)
+        button_21.grid(row=6, column=0)
+        button_22.grid(row=6, column=1)
+        button_23.grid(row=6, column=2)
+        button_24.grid(row=6, column=3)
 
-    def _number_button_click(self,num): 
-        if not self.final_done:      
+    def _number_button_click(self,num):
+        if not self.final_done:
             dot = "."
             if num == dot:
                 if dot not in self.read_number:
@@ -70,10 +103,10 @@ class GUI:
             else:
                 if self.read_number == "0" :
                     self.read_number = num
-                elif self.read_number == "":     
+                elif self.read_number == "":
                     self.read_number = num
                 else:
-                    self.read_number = self.read_number + num                            
+                    self.read_number = self.read_number + num   
             self._label_var.set(self.read_number)
 
     def _clear_button_click(self):
@@ -81,7 +114,7 @@ class GUI:
         self.done=False
         self.operator = ""
         self.read_number = self.calculator.get_operand1()
-        self._label_var.set(self.read_number) 
+        self._label_var.set(self.read_number)
         self.final_done = False
 
     def _negation_button_click(self):
@@ -97,26 +130,25 @@ class GUI:
     def _sq_button_click(self):
         if not self.done:
             self.calculator.set_operand1(self.read_number)
-            self.read_number=self.calculator.count_one_operands("sq")       
+            self.read_number=self.calculator.count_one_operands("sq")
             self._label_var.set(self.read_number)
             self.done = True
 
     def _exp_button_click(self):
         if not self.done:
             self.calculator.set_operand1(self.read_number)
-            self.read_number=self.calculator.count_one_operands("e")          
+            self.read_number=self.calculator.count_one_operands("e")
             self._label_var.set(self.read_number)
             self.done = True
 
     def _two_operator_func_button_click(self, operator:str):
         if not self.done:
-            self.operator = operator     
+            self.operator = operator
             self.calculator.set_operand1(self.read_number)
-            self.read_number = ""               
+            self.read_number = ""
             self._label_var.set(self.read_number)
             self.done = True
 
-    def _equation_button_click(self):    
+    def _equation_button_click(self):
         self._label_var.set(self.calculator.count_two_operands(self.operator,self.read_number))
         self.final_done = True
-        
