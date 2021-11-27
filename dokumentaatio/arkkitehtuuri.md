@@ -33,7 +33,7 @@ Toiminnallisuudesta vastaa luokka [Calculator](../src/services/calculator.py). L
 
 
 
-Calculator tallentaa ja pääsee käsiksi suoritettujen operaatioiden tilastoihin tallennuksesta vastaavan pakkauksessa _repositories_ sijaitsevan luokan [CalculatorRepository](..src/repositories/calculator_repository.py) kautta. 
+Calculator tallentaa ja pääsee käsiksi suoritettujen operaatioiden tilastoihin tallennuksesta vastaavan pakkauksessa _repositories_ sijaitsevan luokan [CalculatorRepository](../src/repositories/calculator_repository.py) kautta. 
 
 `Calculator`-luokan ja ohjelman muiden osien suhdetta kuvaava luokka/pakkauskaavio:
 
@@ -46,7 +46,7 @@ Pakkauksen _repositories_ luokka `CalculatorRepository` huolehtii tietojen talle
 
 ### Tiedostot
 
-Tilastodata tehdyistä laskutoimituksista tallennetaan SQLite-tietokannan tauluun `operations`, joka alustetaan [initialize_database.py](https://github.com/ohjelmistotekniikka-hy/python-todo-app/blob/master/src/initialize_database.py)-tiedostossa.
+Tilastodata tehdyistä laskutoimituksista tallennetaan SQLite-tietokannan tauluun `operations`, joka alustetaan [initialize_database.py](../src/initialize_database.py)-tiedostossa.
 
 ## Päätoiminnallisuudet
 
