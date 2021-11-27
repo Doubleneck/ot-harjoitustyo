@@ -6,7 +6,7 @@ Ohjelman rakenne noudattelee kolmitasoista kerrosarkkitehtuuria, ja koodin pakka
 
 ![Tänne tulee EHKÄ Pakkausrakenne](./kuvat/kuvannimi.png)
 
-Pakkaus _ui_ sisältää käyttöliittymästä, _services_ sovelluslogiikasta ja _repositories_ tietojen pysyväistallennuksesta vastaavan koodin. Pakkaus _entities_ sisältää luokkia, jotka kuvastavat sovelluksen käyttämiä tietokohteita.
+Pakkaukset: _ui_ sisältää käyttöliittymästä, _services_ sovelluslogiikasta ja _repositories_ tietojen pysyväistallennuksesta vastaavan koodin. 
 
 ## Käyttöliittymä
 
@@ -21,9 +21,9 @@ Laskin, jossa näyttö:
 Myös terminaali toimii osana käyttöliittymää, koska tietokannan haut tulostuvat terminaaliin.
 
 
-Näkymien näyttämisestä vastaa [GUI](../src/ui/gui.py)-luokka. Käyttöliittymä on pyritty sovelluslogiikasta. 
+Näkymien näyttämisestä vastaa [GUI](../src/ui/gui.py)-luokka. Käyttöliittymä on pyritty eristämään sovelluslogiikasta. 
 
-Se ainoastaan kutsuu [Calculator](../src/services/calculator.py)-luokan metodeja, joka edelleen kutsuu [Operations](../src/services/operations.py) luokan metodeja.
+GUI ainoastaan kutsuu [Calculator](../src/services/calculator.py)-luokan metodeja, joka edelleen kutsuu [Operations](../src/services/operations.py) luokan metodeja.
 
 ## Sovelluslogiikka
 
