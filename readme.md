@@ -4,7 +4,7 @@ Sovellus on työpöytälaskin graafisella käyttöliittymällä.
 
 ##  Python-versio:
 
-Sovelluksen toiminta on testattu Python-versiolla `3.6.0`.
+Sovelluksen toiminta on testattu Python-versiolla `3.8`.
 
 ## Dokumentaatio
 
