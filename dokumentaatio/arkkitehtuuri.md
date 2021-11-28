@@ -53,7 +53,7 @@ Kuvataan seuraavaksi sovelluksen toimintalogiikka muutaman päätoiminnallisuude
 
 Kun kirjautumisnäkymän syötekenttiin kirjoitetetataan käyttäjätunnus ja salasana, jonka jälkeen klikataan painiketta _Login_, etenee sovelluksen kontrolli seuraavasti:
 
--[]joku sekvenssikaavio
+- [ ]Tänne joku sekvenssikaavio
 
 ![TÄNNE JOKU SEKVENSSIKAAVIO](./kuvat/jokusekvenssi.png)
 
