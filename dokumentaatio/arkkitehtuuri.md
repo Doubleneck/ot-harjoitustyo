@@ -51,7 +51,6 @@ Kuvataan seuraavaksi sovelluksen toimintalogiikka muutaman päätoiminnallisuude
 
 ### Laskuoperaatioiden suorittaminen
 
-Kun kirjautumisnäkymän syötekenttiin kirjoitetetataan käyttäjätunnus ja salasana, jonka jälkeen klikataan painiketta _Login_, etenee sovelluksen kontrolli seuraavasti:
 
 - [ ]Tänne joku sekvenssikaavio
 
