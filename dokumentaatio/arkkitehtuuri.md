@@ -35,9 +35,6 @@ Toiminnallisuudesta vastaa luokka [Calculator](../src/services/calculator.py). L
 
 Calculator tallentaa ja pääsee käsiksi suoritettujen operaatioiden tilastoihin tallennuksesta vastaavan pakkauksessa _repositories_ sijaitsevan luokan [CalculatorRepository](../src/repositories/calculator_repository.py) kautta. 
 
-`Calculator`-luokan ja ohjelman muiden osien suhdetta kuvaava luokka/pakkauskaavio:
-
-![Tänne EHKÄ Pakkausrakenne ja luokat](./kuvat/kuvannimi.png)
 
 ## Tietojen pysyväistallennus
 
@@ -55,6 +52,8 @@ Kuvataan seuraavaksi sovelluksen toimintalogiikka muutaman päätoiminnallisuude
 ### Laskuoperaatioiden suorittaminen
 
 Kun kirjautumisnäkymän syötekenttiin kirjoitetetataan käyttäjätunnus ja salasana, jonka jälkeen klikataan painiketta _Login_, etenee sovelluksen kontrolli seuraavasti:
+
+-[]joku sekvenssikaavio
 
 ![TÄNNE JOKU SEKVENSSIKAAVIO](./kuvat/jokusekvenssi.png)
 
