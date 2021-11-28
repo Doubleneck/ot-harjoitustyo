@@ -4,7 +4,7 @@
 
 Ohjelman rakenne noudattelee kolmitasoista kerrosarkkitehtuuria, ja koodin pakkausrakenne on seuraava:
 
-![Tänne tulee EHKÄ Pakkausrakenne](./kuvat/kuvannimi.png)
+![Pakkausrakenne](./kuvat/MVC_pakkausrakenne.jpg)
 
 Pakkaukset: _ui_ sisältää käyttöliittymästä, _services_ sovelluslogiikasta ja _repositories_ tietojen pysyväistallennuksesta vastaavan koodin. 
 
@@ -35,9 +35,6 @@ Toiminnallisuudesta vastaa luokka [Calculator](../src/services/calculator.py). L
 
 Calculator tallentaa ja pääsee käsiksi suoritettujen operaatioiden tilastoihin tallennuksesta vastaavan pakkauksessa _repositories_ sijaitsevan luokan [CalculatorRepository](../src/repositories/calculator_repository.py) kautta. 
 
-`Calculator`-luokan ja ohjelman muiden osien suhdetta kuvaava luokka/pakkauskaavio:
-
-![Tänne EHKÄ Pakkausrakenne ja luokat](./kuvat/kuvannimi.png)
 
 ## Tietojen pysyväistallennus
 
@@ -54,7 +51,8 @@ Kuvataan seuraavaksi sovelluksen toimintalogiikka muutaman päätoiminnallisuude
 
 ### Laskuoperaatioiden suorittaminen
 
-Kun kirjautumisnäkymän syötekenttiin kirjoitetetataan käyttäjätunnus ja salasana, jonka jälkeen klikataan painiketta _Login_, etenee sovelluksen kontrolli seuraavasti:
+
+- [ ]Tänne joku sekvenssikaavio
 
 ![TÄNNE JOKU SEKVENSSIKAAVIO](./kuvat/jokusekvenssi.png)
 
