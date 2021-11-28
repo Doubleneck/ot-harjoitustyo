@@ -4,7 +4,7 @@
 
 Ohjelman rakenne noudattelee kolmitasoista kerrosarkkitehtuuria, ja koodin pakkausrakenne on seuraava:
 
-![Pakkausrakenne](./kuvat/MVC_pakkausrakenne.jpg)
+![Pakkausrakenne](./kuvat/pakkaus.jpg)
 
 Pakkaukset: _ui_ sisältää käyttöliittymästä, _services_ sovelluslogiikasta ja _repositories_ tietojen pysyväistallennuksesta vastaavan koodin. 
 
