@@ -36,6 +36,6 @@ class Calculator:
             self.operand1 = Operations.sqrt_func(self,self.operand1)
         return self.operand1
 
-    def print_stats(self):
+    def get_stats(self):
         calculator_repository = CalculatorRepository(get_database_connection())
-        calculator_repository.stats()
+        return calculator_repository.stats()

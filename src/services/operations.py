@@ -1,5 +1,4 @@
 from math import sqrt
-#from math import pi
 
 class Operations:
 
@@ -22,4 +21,9 @@ class Operations:
         return str(float(number1) * float(number1))
 
     def sqrt_func(self, number1:str):
-        return str(sqrt(float(number1)))
+        try:
+            return str(sqrt(float(number1)))
+        except ValueError:
+            return "error sqrt not defined for negative"
+        
+
