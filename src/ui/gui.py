@@ -7,7 +7,6 @@ class GUI:
         self._label_var = None
         self.read_number = ""
         self.operator = ""
-        self.final_done = False
         self.done = False
         self.calculator = CalculatorService()
 
@@ -93,19 +92,18 @@ class GUI:
         button_24.grid(row=6, column=3)
 
     def _number_button_click(self,num):
-        if not self.final_done:
-            dot = "."
-            if num == dot:
-                if dot not in self.read_number:
-                    self.read_number = self.read_number+num
+        dot = "."
+        if num == dot:
+            if dot not in self.read_number:
+                self.read_number = self.read_number+num
+        else:
+            if self.read_number == "0" :
+                self.read_number = num
+            elif self.read_number == "":
+                self.read_number = num
             else:
-                if self.read_number == "0" :
-                    self.read_number = num
-                elif self.read_number == "":
-                    self.read_number = num
-                else:
-                    self.read_number = self.read_number + num
-            self._label_var.set(self.read_number)
+                self.read_number = self.read_number + num
+        self._label_var.set(self.read_number)
 
     def _clear_button_click(self):
         self.calculator.set_operand1("0")
@@ -117,7 +115,7 @@ class GUI:
 
     def _negation_button_click(self):
         dot="."
-        if not self.final_done:
+        if self.read_number != "":
             if dot in self.read_number:
                 self.read_number = str((float(self.read_number)*-1))
             else:
@@ -130,7 +128,6 @@ class GUI:
             self.calculator.set_operand1(self.read_number)
             self.read_number = self.calculator.count_one_operands(operator)
             self._set_result_click()
-
 
     def _two_operator_func_button_click(self, operator:str):
         if self.read_number == "":
@@ -174,11 +171,9 @@ class GUI:
                    " kertaa, "+ str(exp) + "% kaikista")
             print ("Yhteensä " + str(res[0])  + " laskua suoritettu")
         self._clear_button_click()
-        self._final_done = True
 
     def _set_result_click(self):
         self.done=False
         self.operator = ""
         self.read_number = self.calculator.get_operand1()
         self._label_var.set(self.read_number)
-        self.final_done = False
