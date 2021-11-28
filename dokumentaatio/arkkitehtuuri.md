@@ -4,7 +4,7 @@
 
 Ohjelman rakenne noudattelee kolmitasoista kerrosarkkitehtuuria, ja koodin pakkausrakenne on seuraava:
 
-![Pakkausrakenne](./kuvat/MVC_pakkausrakenne.jpg)
+![Pakkausrakenne](./kuvat/pakkaus.jpg)
 
 Pakkaukset: _ui_ sisältää käyttöliittymästä, _services_ sovelluslogiikasta ja _repositories_ tietojen pysyväistallennuksesta vastaavan koodin. 
 
@@ -23,13 +23,13 @@ Myös terminaali toimii osana käyttöliittymää, koska tietokannan haut tulost
 
 Näkymien näyttämisestä vastaa [GUI](../src/ui/gui.py)-luokka. Käyttöliittymä on pyritty eristämään sovelluslogiikasta. 
 
-GUI ainoastaan kutsuu [Calculator](../src/services/calculator.py)-luokan metodeja, joka edelleen kutsuu [Operations](../src/services/operations.py) luokan metodeja.
+GUI ainoastaan kutsuu [CalculatorService](../src/services/calculator_service.py)-luokan metodeja, joka edelleen kutsuu [OperationsService](../src/services/operations_service.py) luokan metodeja.
 
 ## Sovelluslogiikka
 
 
 
-Toiminnallisuudesta vastaa luokka [Calculator](../src/services/calculator.py). Luokka kutsuu erillisen luokan [Operations](../src/services/operations.py)  metodeja, joilla laskimen toiminnallisuus syntyy.
+Toiminnallisuudesta vastaa luokka [CalculatorService](../src/services/calculator_service.py). Luokka kutsuu erillisen luokan [OperationsService](../src/services/operations_service.py)  metodeja, joilla laskimen toiminnallisuus syntyy.
 
 
 
