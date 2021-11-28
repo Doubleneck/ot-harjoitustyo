@@ -16,7 +16,7 @@ Sovellus koostuu yhdestä näkymästä, jossa on laskimen näppäimistö ja näy
 
 ## Perusversion tarjoama toiminnallisuus
 
-### Ennen kirjautumista
+### Ei kirjautumista
 
 - käyttäjä voi laskea:
   - yhteenlaskun
@@ -26,7 +26,7 @@ Sovellus koostuu yhdestä näkymästä, jossa on laskimen näppäimistö ja näy
   - neliöjuuren
   - toisen potenssin
   
--käyttäjä voi hakea komentoriviltä tilaston suoritettujen matemaattiseten operaatioiden määrästä.
+-käyttäjä voi hakea komentoriviltä tilaston suoritettujen matemaattisten operaatioiden määrästä.
 
 ## Jatkokehitysideoita
 
