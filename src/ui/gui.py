@@ -1,5 +1,5 @@
 from tkinter import StringVar, ttk, constants
-from services.calculator import Calculator
+from services.calculator_service import CalculatorService
 
 class GUI:
     def __init__(self, root):
@@ -9,7 +9,7 @@ class GUI:
         self.operator = ""
         self.final_done = False
         self.done = False
-        self.calculator = Calculator()
+        self.calculator = CalculatorService()
 
     def start(self):
         self.calculator.set_operand1(0)
