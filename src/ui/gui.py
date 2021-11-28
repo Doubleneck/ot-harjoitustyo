@@ -6,7 +6,6 @@ class GUI:
         self._root = root
         self._label_var = None
         self.read_number = ""
-        self.one_operation_done = False
         self.operator = ""
         self.final_done = False
         self.done = False
@@ -127,17 +126,17 @@ class GUI:
             self._label_var.set(self.read_number)
 
     def _one_operator_func_button_click(self, operator:str):
-        print(self.read_number)
         if not self.done:
             self.calculator.set_operand1(self.read_number)
             self.read_number = self.calculator.count_one_operands(operator)
-            self._label_var.set(self.read_number)
-            self.done = True
-            self.one_operation_done = True
-            self.final_done = True
+            self._set_result_click()
+
 
     def _two_operator_func_button_click(self, operator:str):
-        #print(self.done)
+        print(operator)
+        print(self.calculator.get_operand1())
+        print("self final done:" )
+        print(self.final_done)
         if self.read_number == "":
             self.done = False
             self.read_number = self.calculator.get_operand1()
@@ -149,11 +148,8 @@ class GUI:
             self.done = True
 
     def _equation_button_click(self):
-        if not self.one_operation_done:
-            self._label_var.set(self.calculator.count_two_operands(self.operator,self.read_number))           
-            self._set_result_click()
-        self.one_operation_done = False    
-        self.final_done = True
+        self._label_var.set(self.calculator.count_two_operands(self.operator,self.read_number))  
+        self._set_result_click()
 
     def _stat_button_click(self):
         res=self.calculator.get_stats()
@@ -179,7 +175,7 @@ class GUI:
                    " kertaa, "+ str(sqrt) + "% kaikista")
             print ("operaatiota 'exp' laskettu " + str(res[6]) +
                    " kertaa, "+ str(exp) + "% kaikista")
-            print ("Yhteensä " + str(res[0])  + " laskua suoritettu")      
+            print ("Yhteensä " + str(res[0])  + " laskua suoritettu")
         self._clear_button_click()
         self._final_done = True
 

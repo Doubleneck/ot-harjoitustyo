@@ -25,5 +25,3 @@ class Operations:
             return str(sqrt(float(number1)))
         except ValueError:
             return "error sqrt not defined for negative"
-        
-
