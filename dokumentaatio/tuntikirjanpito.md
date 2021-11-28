@@ -15,4 +15,5 @@
 |26.11.|1| GUI käyttölogiikka muokattu, pakottaa laskemaan kaksi kerrallaan|
 |26.11.|5| tietokanta otettu käyttöön, ongelma Poetryn ja db-repositorion kanssa ratkottu, koodin siivoamista|
 |27.11.|2| sovellus päivitetty Python 3.6 -> 3.8, tarkistuksia ja korjauksia, lisätty arkkitehtuuri.md|
-|yht |33|
+|28.11.|2| päivitetty struktuuria: query repositoriossa, haku servicessä, printtaus gui:ssa. Fiksattu virhe tilastoinnissa,lisätty ValueError Sqrt(neg) |
+|yht |35|
