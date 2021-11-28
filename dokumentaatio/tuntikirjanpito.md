@@ -14,4 +14,5 @@
 |25.11.|4| yrityksiä rakentaa kompleksisempi funktionaalisuus, paluu 2-operaattoriseen dummyyn|
 |26.11.|1| GUI käyttölogiikka muokattu, pakottaa laskemaan kaksi kerrallaan|
 |26.11.|5| tietokanta otettu käyttöön, ongelma Poetryn ja db-repositorion kanssa ratkottu, koodin siivoamista|
-|yht |31|
+|27.11.|2| sovellus päivitetty Python 3.6 -> 3.8, tarkistuksia ja korjauksia, lisätty arkkitehtuuri.md|
+|yht |33|
