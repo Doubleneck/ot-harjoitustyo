@@ -133,10 +133,6 @@ class GUI:
 
 
     def _two_operator_func_button_click(self, operator:str):
-        print(operator)
-        print(self.calculator.get_operand1())
-        print("self final done:" )
-        print(self.final_done)
         if self.read_number == "":
             self.done = False
             self.read_number = self.calculator.get_operand1()
@@ -148,8 +144,9 @@ class GUI:
             self.done = True
 
     def _equation_button_click(self):
-        self._label_var.set(self.calculator.count_two_operands(self.operator,self.read_number))
-        self._set_result_click()
+        if self.read_number != "":
+            self._label_var.set(self.calculator.count_two_operands(self.operator,self.read_number))
+            self._set_result_click()
 
     def _stat_button_click(self):
         res=self.calculator.get_stats()
