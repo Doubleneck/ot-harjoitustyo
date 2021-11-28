@@ -1,11 +1,11 @@
-from services.calculator import Calculator
+from services.calculator_service import CalculatorService
 
 class UI:
     def __init__(self):
         pass
 
     def start():
-        calculator = Calculator()
+        calculator = CalculatorService()
         print("")
         print("***LASKINSOVELLUS***")
         print("lopeta valitsemalla q ja Enter \n")

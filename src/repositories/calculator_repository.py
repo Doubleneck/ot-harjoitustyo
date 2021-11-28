@@ -19,7 +19,7 @@ class CalculatorRepository:
                                       "operation='sqrt'").fetchone()[0]
             res_exp=cursor.execute("select count(*) from operations "
                                      "where operation='exp'").fetchone()[0]
-            return (res_all,res_add,res_sub,res_div,res_mul,res_sqrt,res_exp)              
+            return (res_all,res_add,res_sub,res_div,res_mul,res_sqrt,res_exp)
         else:
             return 0
 

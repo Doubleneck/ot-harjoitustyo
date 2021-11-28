@@ -1,9 +1,9 @@
 import unittest
-from services.calculator import Calculator
+from services.calculator_service import CalculatorService
 
 class TestCalculator(unittest.TestCase):
     def setUp(self):
-        self.calculator = Calculator()
+        self.calculator = CalculatorService()
         self.calculator.set_operand1(16)
 
     def test_hello_world(self):
