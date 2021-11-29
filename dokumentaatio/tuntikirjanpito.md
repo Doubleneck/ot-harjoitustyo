@@ -17,4 +17,5 @@
 |27.11.|2| sovellus päivitetty Python 3.6 -> 3.8, tarkistuksia ja korjauksia, lisätty arkkitehtuuri.md|
 |28.11.|2| päivitetty struktuuria: query repositoriossa, haku servicessä, printtaus gui:ssa. Fiksattu virhe tilastoinnissa,lisätty ValueError Sqrt(neg) |
 |28.11.|2| Muutettu services pakkauksen nimet mallin mukaisiksi, Calculator -> CalculatorService, jne. , koodin siivoamista Pylint|
-|yht |37|
+|29.11.|1| Lisätty luokkakaavio|
+|yht |38|
