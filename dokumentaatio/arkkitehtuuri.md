@@ -8,6 +8,9 @@ Ohjelman rakenne noudattelee kolmitasoista kerrosarkkitehtuuria, ja koodin pakka
 
 Pakkaukset: _ui_ sisältää käyttöliittymästä, _services_ sovelluslogiikasta ja _repositories_ tietojen pysyväistallennuksesta vastaavan koodin. 
 
+Ohjelmassa on pääluokat [GUI](../src/ui/gui.py), [CalculatorService](../src/services/calculator_service.py), [OperationsService](../src/services/operations_service.py) ja [CalculatorRepository](../src/repositories/calculator_repository.py), jotka ovat alla olevan kuvan mukaisessa 
+suhteessa toisiinsa: 
+![Luokkakaavio](./kuvat/UML.jpg)
 ## Käyttöliittymä
 
 Ohjelmalla ei ole erikseen käyttäjiä.
