@@ -17,11 +17,11 @@ class GUI:
         calculator_screen = ttk.Label(master=self._root, textvariable=self._label_var)
 
         button_1 = ttk.Button(master=self._root,
-        text="?",command=lambda: self._set_result())
+        text="M-ADD",command=lambda: self._add_memory_click())
         button_2 = ttk.Button(master=self._root,
-        text="?",command=lambda: self._clear_button_click())
+        text="M-CALL",command=lambda: self._recall_memory_click())
         button_3 = ttk.Button(master=self._root,
-        text="?",command=lambda: self._clear_button_click())
+        text="M-RESET",command=lambda: self._reset_memory_click())
         button_4 = ttk.Button(master=self._root,
         text="STAT",command=lambda: self._stat_button_click())
         button_5 = ttk.Button(master=self._root,
@@ -177,3 +177,15 @@ class GUI:
         self.operator = ""
         self.read_number = self.calculator.get_operand1()
         self._label_var.set(self.read_number)
+
+    def _add_memory_click(self):
+        self.calculator.set_memory(self.read_number)   
+
+    def _recall_memory_click(self):
+        self.read_number = self.calculator.get_memory()
+        self._label_var.set(self.read_number)
+
+    def _reset_memory_click(self):
+        self.calculator.set_memory("0")     
+
+          

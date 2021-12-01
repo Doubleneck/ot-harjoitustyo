@@ -7,12 +7,18 @@ class CalculatorService:
         self.operand1 = "0"
         self.calculator_repository = CalculatorRepository(get_database_connection())
         self.memory = "0"
-        
+
     def get_operand1(self):
-        return str(self.operand1)
+        return self.operand1
 
     def set_operand1(self,number:str):
         self.operand1 = number
+
+    def get_memory(self):
+        return self.memory
+
+    def set_memory(self,number:str):
+        self.memory = number    
 
     def count_two_operands(self, operator:str, operand2:str):
         if self.operand1 == "":
