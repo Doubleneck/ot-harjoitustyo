@@ -58,7 +58,7 @@ Kuvataan seuraavaksi sovelluksen toimintalogiikka muutaman päätoiminnallisuude
 
 
 GUI rakentaa syötteenä annettavan luvun ja tallentaa sen muuttujaansa read_number. 
-Alla esimerkki yksipaikkaisesta funktiosta, joka saa virheilmotuksen: nelijuurta ei voio ottaa negatiivisesta luvusta.
+Alla esimerkki yksipaikkaisesta funktiosta, joka saa virheilmotuksen: nelijuurta ei voi ottaa negatiivisesta luvusta.
 
 ![Neliöjuuren virheilmoitus](./kuvat/seq_diag1.png)
 
