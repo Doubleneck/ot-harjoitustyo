@@ -2,6 +2,10 @@ class CalculatorRepository:
     def __init__(self, connection):
         self._connection = connection
 
+    def delete_all(self):
+        cursor = self._connection.cursor()
+        cursor.execute("delete from operations")
+
     def stats(self):
         '''statistiikka'''
         cursor = self._connection.cursor()

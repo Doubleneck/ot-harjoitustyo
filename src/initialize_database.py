@@ -9,7 +9,6 @@ def drop_tables(connection):
     ''')
     connection.commit()
 
-
 def create_tables(connection):
     cursor = connection.cursor()
     cursor.execute('''create table operations (operation text);''')
