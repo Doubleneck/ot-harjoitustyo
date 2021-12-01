@@ -1,10 +1,10 @@
 import unittest
 from services.calculator_service import CalculatorService
 
-class TestCalculator(unittest.TestCase):
+class TestCalculatorService(unittest.TestCase):
     def setUp(self):
         self.calculator = CalculatorService()
-        self.calculator.set_operand1(16)
+        self.calculator.set_operand1("16")
 
     def test_hello_world(self):
         self.assertEqual("Hello world", "Hello world")
@@ -36,3 +36,10 @@ class TestCalculator(unittest.TestCase):
     def test_calculator_set_operand1_returns_correctly(self):
         self.calculator.set_operand1("8")
         self.assertEqual(self.calculator.get_operand1(), "8")
+
+    def test_calculator_memory_zero_when_started(self):
+        self.assertEqual(self.calculator.get_memory(), "0") 
+
+    def test_calculator_set_memory_returns_correctly(self):
+        self.calculator.set_memory("9.9")
+        self.assertEqual(self.calculator.get_memory(), "9.9")    
