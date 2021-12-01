@@ -2,10 +2,6 @@
 
 Lataa projektin [lähdekoodi](https://github.com/Doubleneck/ot-harjoitustyo) koneellesi valitsemalla Code -valikon takaa download.zip.
 
-##Konfigurointi
-
-- [] toistaiseksi toteuttamatta
-
 ## Ohjelman käynnistäminen:
 
 Asenna riippuvuudet:
@@ -34,5 +30,13 @@ Anna laskimelle lukuja, ja se suorittaa valitsemiasi operaatioita. Ota huomioon,
 Saadulla luvulla voi siis jatkaa laskemista, mutta et voi suoraan laskea esim 3+4+5. Laskin huolehtii tästä estämällä uusien operaattoreiden painamisen.
 
 Laskin tekee tietokantaan tilastoa käytetyistä operaatioista. Saat tilaston näkymään komentorivillä painamalla laskimen nappia "STAT"
+
+Muistitoiminto:
+
+M-ADD lisää näkyvän luvun muistipaikkaan.
+M-CALL hakee lisätyn luvun muistipaikasta.
+M-RESET tyhjentää muistipaikan (asettaa arvon 0)
+
+Huom, on tarkoituskin, että C, joka nollaa laskimen ei nollaa muistipaikkaa.
 
 
