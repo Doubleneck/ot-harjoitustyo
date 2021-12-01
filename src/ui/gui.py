@@ -17,7 +17,7 @@ class GUI:
         calculator_screen = ttk.Label(master=self._root, textvariable=self._label_var)
 
         button_1 = ttk.Button(master=self._root,
-        text="?",command=lambda: self._set_result_click())
+        text="?",command=lambda: self._set_result())
         button_2 = ttk.Button(master=self._root,
         text="?",command=lambda: self._clear_button_click())
         button_3 = ttk.Button(master=self._root,
@@ -127,7 +127,7 @@ class GUI:
         if not self.done:
             self.calculator.set_operand1(self.read_number)
             self.read_number = self.calculator.count_one_operands(operator)
-            self._set_result_click()
+            self._set_result()
 
     def _two_operator_func_button_click(self, operator:str):
         if self.read_number == "":
@@ -143,7 +143,7 @@ class GUI:
     def _equation_button_click(self):
         if self.read_number != "":
             self._label_var.set(self.calculator.count_two_operands(self.operator,self.read_number))
-            self._set_result_click()
+            self._set_result()
 
     def _stat_button_click(self):
         res=self.calculator.get_stats()
@@ -172,7 +172,7 @@ class GUI:
             print ("Yhteensä " + str(res[0])  + " laskua suoritettu")
         self._clear_button_click()
 
-    def _set_result_click(self):
+    def _set_result(self):
         self.done=False
         self.operator = ""
         self.read_number = self.calculator.get_operand1()
