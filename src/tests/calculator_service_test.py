@@ -2,6 +2,7 @@ import unittest
 from services.calculator_service import CalculatorService
 
 class TestCalculatorService(unittest.TestCase):
+
     def setUp(self):
         self.calculator = CalculatorService()
         self.calculator.set_operand1("16")

@@ -3,6 +3,7 @@ from repositories.calculator_repository import CalculatorRepository
 from database_connection import get_database_connection
 
 class CalculatorService:
+
     def __init__(self):
         self.operand1 = "0"
         self.calculator_repository = CalculatorRepository(get_database_connection())
