@@ -18,23 +18,22 @@ Sovellus koostuu yhdestä näkymästä, jossa on laskimen näppäimistö ja näy
 
 ### Ei kirjautumista
 
+- [x] Graafinen käyttöliittymä
 - käyttäjä voi laskea:
-  - yhteenlaskun
-  - vähennyslaskun
-  - kertolaskun
-  - jakolaskun
-  - neliöjuuren
-  - toisen potenssin
-  
--käyttäjä voi hakea komentoriviltä tilaston suoritettujen matemaattisten operaatioiden määrästä.
+  - [x] yhteenlaskun 
+  - [x] vähennyslaskun
+  - [x] kertolaskun
+  - [x] jakolaskun
+  - [x] neliöjuuren
+  - [x] toisen potenssin  
+- [x] käyttäjä voi hakea komentoriviltä tilaston suoritettujen matemaattisten operaatioiden määrästä.
 
 ## Jatkokehitysideoita
 
 Perusversion jälkeen järjestelmää täydennetään ajan salliessa esim. näillä toiminnallisuuksilla
 
-- lisää operaatioita: yleinen potenssi
-- lisää operaatioita: muistitoiminto
-- lisää operaatioita: prosenttilasku
-- lisää operaatioita, esim sin, cos, tan.
-
-- tilastojen seuranta graafisesti
+- [ ]lisää operaatioita: muistitoiminto
+- [ ]lisää operaatioita: prosenttilasku
+- [ ]lisää operaatioita, esim sin, cos, tan.
+- [ ]lisää operaatioita: yleinen potenssi
+- [ ]tilastojen seuranta graafisesti
