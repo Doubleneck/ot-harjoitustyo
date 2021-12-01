@@ -18,7 +18,7 @@ class CalculatorService:
         return self.memory
 
     def set_memory(self,number:str):
-        self.memory = number    
+        self.memory = number
 
     def count_two_operands(self, operator:str, operand2:str):
         if self.operand1 == "":

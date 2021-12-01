@@ -6,6 +6,7 @@ class CalculatorRepository:
         '''statistiikka'''
         cursor = self._connection.cursor()
         res_all=cursor.execute("select count(*) from operations ").fetchone()[0]
+        res = (0,0,0,0,0,0,0)
         if res_all != 0:
             res_add=cursor.execute("select count(*) from operations "
                                      " where operation='+'").fetchone()[0]
@@ -19,9 +20,8 @@ class CalculatorRepository:
                                       "operation='sqrt'").fetchone()[0]
             res_exp=cursor.execute("select count(*) from operations "
                                      "where operation='exp'").fetchone()[0]
-            return (res_all,res_add,res_sub,res_div,res_mul,res_sqrt,res_exp)
-        else:
-            return 0
+            res = (res_all,res_add,res_sub,res_div,res_mul,res_sqrt,res_exp)
+        return res
 
     def add_operation(self,operator:str):
         cursor = self._connection.cursor()

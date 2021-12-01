@@ -111,7 +111,6 @@ class GUI:
         self.operator = ""
         self.read_number = self.calculator.get_operand1()
         self._label_var.set(self.read_number)
-        self.final_done = False
 
     def _negation_button_click(self):
         dot="."
@@ -141,13 +140,13 @@ class GUI:
             self.done = True
 
     def _equation_button_click(self):
-        if self.read_number != "":
+        if self.read_number != "" and self.done == True:
             self._label_var.set(self.calculator.count_two_operands(self.operator,self.read_number))
             self._set_result()
 
     def _stat_button_click(self):
         res=self.calculator.get_stats()
-        if res == 0:
+        if res == (0,0,0,0,0,0,0):
             print("Ei laskettuja laskutoimituksia")
         else:
             add=format(int(res[1])*100/int(res[0]),".1f")
@@ -179,13 +178,11 @@ class GUI:
         self._label_var.set(self.read_number)
 
     def _add_memory_click(self):
-        self.calculator.set_memory(self.read_number)   
+        self.calculator.set_memory(self.read_number)
 
     def _recall_memory_click(self):
         self.read_number = self.calculator.get_memory()
         self._label_var.set(self.read_number)
 
     def _reset_memory_click(self):
-        self.calculator.set_memory("0")     
-
-          
+        self.calculator.set_memory("0")
