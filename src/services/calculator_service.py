@@ -6,7 +6,8 @@ class CalculatorService:
     def __init__(self):
         self.operand1 = "0"
         self.calculator_repository = CalculatorRepository(get_database_connection())
-
+        self.memory = "0"
+        
     def get_operand1(self):
         return str(self.operand1)
 
