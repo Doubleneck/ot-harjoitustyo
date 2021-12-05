@@ -18,4 +18,6 @@
 |28.11.|2| päivitetty struktuuria: query repositoriossa, haku servicessä, printtaus gui:ssa. Fiksattu virhe tilastoinnissa,lisätty ValueError Sqrt(neg) |
 |28.11.|2| Muutettu services pakkauksen nimet mallin mukaisiksi, Calculator -> CalculatorService, jne. , koodin siivoamista Pylint|
 |29.11.|1| Lisätty luokkakaavio|
-|yht |38|
+|1.12.|6| Lisätty testiluokka tietokannalle, lisätty testejä, siivottu vanhan käyttöliittymä pois, lisätty laskimeen muistitoiminto|
+|1.12.|1| Lisätty sekvenssikaavio sqrt neg error arkkitehtuurikuvaukseen, Release 1, testattu Cublissa releasen toimivuus|
+|yht |45|

@@ -57,9 +57,10 @@ Kuvataan seuraavaksi sovelluksen toimintalogiikka muutaman päätoiminnallisuude
 ### Laskuoperaatioiden suorittaminen
 
 
-- [ ]Tänne joku sekvenssikaavio
+GUI rakentaa syötteenä annettavan luvun ja tallentaa sen muuttujaansa read_number. 
+Alla esimerkki yksipaikkaisesta funktiosta, joka saa virheilmotuksen: nelijuurta ei voi ottaa negatiivisesta luvusta.
 
-![TÄNNE JOKU SEKVENSSIKAAVIO](./kuvat/jokusekvenssi.png)
+![Neliöjuuren virheilmoitus](./kuvat/seq_diag1.png)
 
 
 ## Ohjelman rakenteeseen jääneet heikkoudet
