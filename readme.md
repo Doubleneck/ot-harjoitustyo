@@ -13,7 +13,7 @@ Sovelluksen toiminta on testattu Python-versiolla `3.8`.
 - [vaatimusmäärittely](https://github.com/Doubleneck/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)  
 - [tuntikirjanpito](https://github.com/Doubleneck/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 - [arkkitehtuurikuvaus](https://github.com/Doubleneck/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
-- [ ]Testausdokumentti
+- [testausdokumentti](https://github.com/Doubleneck/ot-harjoitustyo/blob/master/dokumentaatio/testausdokumentti.md)
 
 ## Asennus
 
