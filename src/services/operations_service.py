@@ -1,6 +1,7 @@
 from math import sqrt
 
 class OperationsService:
+    """ Laskinpalvelun operaatioista vastaava konstruktoriton luokka"""
 
     def sum_func(self, number1:str, number2:str):
         return str(float(number1)+float(number2))

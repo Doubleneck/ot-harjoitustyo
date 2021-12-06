@@ -3,11 +3,24 @@ from repositories.calculator_repository import CalculatorRepository
 from database_connection import get_database_connection
 
 class CalculatorService:
+    """Sovelluslogiikasta vastaava luokka."""
 
     def __init__(self):
         self.operand1 = "0"
         self.calculator_repository = CalculatorRepository(get_database_connection())
         self.memory = "0"
+    
+    """Luokan konstruktori. Luo uuden sovelluslogiikasta vastaavan palvelun
+
+    Args:
+        operand1:
+            Laskinsovelluksen ensimmäinen operandi, joka tallennetaan laskimeen joko laskun tuloksena tai
+            kahden muuttujan operaatiossa ensimmäiseksi operandiksi.
+        calculator_repository:
+            CalculatorRepository - olio, jolla on luokkaa vastaavat metodit
+        memory:
+            Laskinsovelluksen sisäinen muistipaikka.
+    """
 
     def get_operand1(self):
         return self.operand1
@@ -22,6 +35,16 @@ class CalculatorService:
         self.memory = number
 
     def count_two_operands(self, operator:str, operand2:str):
+        """ Suorittaa kaksipaikkaisen laskuoperaation ja lisää operaation tietokantaan. 
+            Laskimen Operand1 on ensimmäinen argumentti.
+
+        Args:
+            operator:
+                Merkkijono tai merkki, joka kuvaa operaatiota.
+            operand2:
+                Jälkimmäinen operandi.
+        """
+
         if self.operand1 == "":
             self.operand1 = 0
         self.calculator_repository.add_operation(operator)
@@ -36,6 +59,14 @@ class CalculatorService:
         return self.operand1
 
     def count_one_operands(self, operator:str):
+        """ Suorittaa yksipaikkaisen laskuoperaation ja lisää operaation tietokantaan.
+            Laskimen operand1 toimii argumenttina.
+
+        Args:
+            operator:
+                Merkkijono tai merkki, joka kuvaa operaatiota.
+        """
+
         if self.operand1 == "":
             self.operand1 = 0
         self.calculator_repository.add_operation(operator)
