@@ -1,8 +1,8 @@
 class CalculatorRepository:
     """ Tietokantatallennuksesta vastaava luokka."""
 
-    def __init__(self, connection):        
-        self._connection = connection    
+    def __init__(self, connection):
+        self._connection = connection
 
     def delete_all(self):
         cursor = self._connection.cursor()

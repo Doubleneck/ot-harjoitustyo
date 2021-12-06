@@ -140,7 +140,7 @@ class GUI:
             self.done = True
 
     def _equation_button_click(self):
-        if self.read_number != "" and self.done == True:
+        if self.read_number != "" and self.done is True:
             self._label_var.set(self.calculator.count_two_operands(self.operator,self.read_number))
             self._set_result()
 
