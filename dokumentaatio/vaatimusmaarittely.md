@@ -32,7 +32,7 @@ Sovellus koostuu yhdestä näkymästä, jossa on laskimen näppäimistö ja näy
 
 Perusversion jälkeen järjestelmää täydennetään ajan salliessa esim. näillä toiminnallisuuksilla
 
-- [ ]lisää operaatioita: muistitoiminto
+- [x]lisää operaatioita: muistitoiminto
 - [ ]lisää operaatioita: prosenttilasku
 - [ ]lisää operaatioita, esim sin, cos, tan.
 - [ ]lisää operaatioita: yleinen potenssi
