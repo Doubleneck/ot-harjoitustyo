@@ -3,7 +3,7 @@ from services.calculator_service import CalculatorService
 from repositories.calculator_repository import CalculatorRepository
 from database_connection import get_database_connection
 
-class TestCalculatorService(unittest.TestCase):
+class TestCalculatorRepository(unittest.TestCase):
 
     def setUp(self):
         connection = get_database_connection()
