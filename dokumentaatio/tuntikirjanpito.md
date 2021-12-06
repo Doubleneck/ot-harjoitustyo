@@ -20,4 +20,5 @@
 |29.11.|1| Lisätty luokkakaavio|
 |1.12.|6| Lisätty testiluokka tietokannalle, lisätty testejä, siivottu vanhan käyttöliittymä pois, lisätty laskimeen muistitoiminto|
 |1.12.|1| Lisätty sekvenssikaavio sqrt neg error arkkitehtuurikuvaukseen, Release 1, testattu Cublissa releasen toimivuus|
-|yht |45|
+|6.12.|1| Lisätty testausdokumentti, korjattu luokan TestCalculatorRepository nimi. Päivitetty readme.|
+|yht |46|
