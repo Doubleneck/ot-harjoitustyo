@@ -123,16 +123,17 @@ class GUI:
             self._label_var.set(self.read_number)
 
     def _one_operator_func_button_click(self, operator:str):
-        if not self.done:
+        if not self.done and "error" not in self.read_number:
             self.calculator.set_operand1(self.read_number)
             self.read_number = self.calculator.count_one_operands(operator)
             self._set_result()
+            
 
     def _two_operator_func_button_click(self, operator:str):
         if self.read_number == "":
             self.done = False
             self.read_number = self.calculator.get_operand1()
-        if not self.done:
+        if not self.done and "error" not in self.read_number:
             self.operator = operator
             self.calculator.set_operand1(self.read_number)
             self.read_number = ""
