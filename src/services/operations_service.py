@@ -13,16 +13,16 @@ class OperationsService:
         return str(float(number1) * float(number2))
 
     def div_func(self, number1:str, number2:str):
-        try:
-            return str(float(number1) / float(number2))
-        except ZeroDivisionError:
-            return "error div zero"
+        ret = "error div zero"
+        if number2 != "0":
+            ret = str(float(number1) / float(number2))
+        return ret
 
     def exp_func(self, number1:str):
         return str(float(number1) * float(number1))
 
     def sqrt_func(self, number1:str):
-        try:
-            return str(sqrt(float(number1)))
-        except ValueError:
-            return "error sqrt not defined for negative"
+        ret = "error sqrt not defined for negative"
+        if float(number1) >= 0:
+            ret = str(sqrt(float(number1)))
+        return ret
