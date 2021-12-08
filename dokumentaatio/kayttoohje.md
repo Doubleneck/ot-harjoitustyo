@@ -39,4 +39,13 @@ M-RESET tyhjentää muistipaikan (asettaa arvon 0)
 
 Huom, on tarkoituskin, että C, joka nollaa laskimen ei nollaa muistipaikkaa.
 
+Prosenttilasku:
+
+Prosenttilaskussa annetaan ensin prosenttiyksiköt ja sitten luku josta halutaa tietää tuo prosentti:
+Esim. painamalla 4,%,100 saaadaan vastaukseksi 4, eli 4 prosenttia sadasta on 4.
+
+Trigonometriset funktiot:
+
+Laskimelle annetaan kulma asteina, ja se tulostaa kyseisen trigonometrisen funktion. Laskin ei ota huomioon ei-määriteltyjä tangentteja,vaan antaa niille suuren arvon.
+
 
