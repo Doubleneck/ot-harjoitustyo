@@ -49,8 +49,3 @@ class CalculatorRepository:
           (?)
             """,(operator,))
         self._connection.commit()
-
-    def create_table_operations(self):
-        cursor = self._connection.cursor()
-        cursor.execute('''create table if not exists operations (operation text);''')
-        self._connection.commit()    
