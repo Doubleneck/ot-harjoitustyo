@@ -79,7 +79,7 @@ class CalculatorService:
         if operator == "cos":
             self.operand1 = OperationsService.cos_func(self,self.operand1)
         if operator == "tan":
-            self.operand1 = OperationsService.tan_func(self,self.operand1)        
+            self.operand1 = OperationsService.tan_func(self,self.operand1)
         return self.operand1
 
     def get_stats(self):

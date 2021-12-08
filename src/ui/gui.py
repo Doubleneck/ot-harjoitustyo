@@ -139,7 +139,6 @@ class GUI:
             self.calculator.set_operand1(self.read_number)
             self.read_number = self.calculator.count_one_operands(operator)
             self._set_result()
-            
 
     def _two_operator_func_button_click(self, operator:str):
         if self.read_number == "":
@@ -185,11 +184,11 @@ class GUI:
             print ("operaatiota 'exp' laskettu " + str(res[6]) +
                    " kertaa, "+ str(exp) + "% kaikista")
             print ("operaatiota 'sin' laskettu " + str(res[7]) +
-                   " kertaa, "+ str(exp) + "% kaikista")
+                   " kertaa, "+ str(sin) + "% kaikista")
             print ("operaatiota 'cos' laskettu " + str(res[8]) +
-                   " kertaa, "+ str(exp) + "% kaikista")
+                   " kertaa, "+ str(cos) + "% kaikista")
             print ("operaatiota 'tan' laskettu " + str(res[9]) +
-                   " kertaa, "+ str(exp) + "% kaikista")       
+                   " kertaa, "+ str(tan) + "% kaikista")
             print ("Yhteensä " + str(res[0])  + " laskua suoritettu")
         self._clear_button_click()
 
