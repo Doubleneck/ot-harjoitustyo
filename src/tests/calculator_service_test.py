@@ -25,8 +25,23 @@ class TestCalculatorService(unittest.TestCase):
     def test_power_of_two(self):
         self.assertEqual(self.calculator.count_one_operands("exp"),"256.0")
 
+    def test_sin_function(self):
+        self.calculator.set_operand1("45")
+        self.assertEqual(self.calculator.count_one_operands("sin"),"0.70710678")
+
+    def test_cos_function(self):
+        self.calculator.set_operand1("120")
+        self.assertEqual(self.calculator.count_one_operands("cos"),"-0.5")
+
+    def test_tan_function(self):
+        self.calculator.set_operand1("240")
+        self.assertEqual(self.calculator.count_one_operands("tan"),"1.73205081")
+
     def test_div_zero_returns_error(self):
         self.assertEqual(self.calculator.count_two_operands("/",0),"error div zero")
+
+    def test_percent(self):
+        self.assertEqual(self.calculator.count_two_operands("percent",50),"8.0")
 
     def test_sqrt_neg_returns_error(self):
         self.calculator.set_operand1("-10")
