@@ -34,7 +34,8 @@ class CalculatorRepository:
                                      "where operation='tan'").fetchone()[0]
             res_percent=cursor.execute("select count(*) from operations "
                                      "where operation='percent'").fetchone()[0]
-            res = (res_all,res_add,res_sub,res_div,res_mul,res_sqrt,res_exp,res_sin,res_cos,res_tan,res_percent)
+            res = (res_all,res_add,res_sub,res_div,res_mul,
+                  res_sqrt,res_exp,res_sin,res_cos,res_tan,res_percent)
         return res
 
     def add_operation(self,operator:str):
@@ -46,3 +47,8 @@ class CalculatorRepository:
           (?)
             """,(operator,))
         self._connection.commit()
+
+    def create_table_operations(self):
+        cursor = self._connection.cursor()
+        cursor.execute('''create table if not exists operations (operation text);''')
+        self._connection.commit()    

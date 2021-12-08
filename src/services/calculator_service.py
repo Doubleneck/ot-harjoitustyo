@@ -57,7 +57,7 @@ class CalculatorService:
         if operator == "/":
             self.operand1 = OperationsService.div_func(self,self.operand1,operand2)
         if operator == "percent":
-            self.operand1 = OperationsService.percent_func(self,self.operand1,operand2)    
+            self.operand1 = OperationsService.percent_func(self,self.operand1,operand2)
         return self.operand1
 
     def count_one_operands(self, operator:str):
