@@ -21,7 +21,7 @@ Käyttöliittymää GUI lukuunottamatta sovelluksen testauksen haarautumakattavu
 
 ![](./kuvat/testiraportti.png) 
 
-UnitTestien ulkopuolelle jää initialize_database.py, joka on kuitenkin testattu komentoriviltä. 
+UnitTestien ulkopuolelle jää osittain initialize_database.py, joka on kuitenkin testattu komentoriviltä. 
 
 ## Järjestelmätestaus
 
