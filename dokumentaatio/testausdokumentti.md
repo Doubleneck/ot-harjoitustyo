@@ -17,9 +17,9 @@ Testiluokassa alustetaan tietokannan taulu "operations" tyhjäksi datasta. Testi
 
 ### Testauskattavuus
 
-Käyttöliittymää GUI lukuunottamatta sovelluksen testauksen haarautumakattavuus on [ ] (tänne haarautumakattavuus viikolle 6!)
+Käyttöliittymää GUI lukuunottamatta sovelluksen testauksen haarautumakattavuus on 97%.
 
-![](./kuvat/testikattavuus.png) [ ] (tänne kuva testikattavuus viikolle 6!)
+![](./kuvat/testikattavuus.png) 
 
 UnitTestien ulkopuolelle jää initialize_database.py, joka on kuitenkin testattu komentoriviltä. 
 
@@ -36,7 +36,5 @@ Sovellus on haettu ja sitä on testattu [käyttöohjeen](./kayttoohje.md) kuvaam
 Kaikki [määrittelydokumentin](./vaatimusmaarittely.md#perusversion-tarjoama-toiminnallisuus) ja käyttöohjeen listaamat toiminnallisuudet on käyty läpi ja ne toimivat. 
 Peruslogiikan toimivuus on pyritty varmistamaan sillä, että käyttäjä ei enää pysty painamaan niitä nappeja, joiden toimintaa ei tietyssä prosessin vaiheessa haluta. Tätä on testattu mahdollisimman laajalla virhesyötteellä.
 
-## Sovellukseen jääneet laatuongelmat
 
-Sovelluksen GUI tiedosto on aika laaja ja pitkä.
 
