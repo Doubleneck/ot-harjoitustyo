@@ -14,7 +14,7 @@ class OperationsService:
 
     def div_func(self, number1:str, number2:str):
         ret = "error div zero"
-        if number2 != "0":
+        if float(number2) != 0.0:
             ret = str(float(number1) / float(number2))
         return ret
 
