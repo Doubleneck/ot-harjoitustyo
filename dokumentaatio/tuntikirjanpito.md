@@ -22,4 +22,7 @@
 |1.12.|1| Lisätty sekvenssikaavio sqrt neg error arkkitehtuurikuvaukseen, Release 1, testattu Cublissa releasen toimivuus|
 |6.12.|1| Lisätty testausdokumentti, korjattu luokan TestCalculatorRepository nimi. Päivitetty readme.|
 |6.12.|1| Lisätty Docstring pääluokkiin|
-|yht |47|
+|8.12.|2| Lisätty uudet toiminnot: prosenttilasku, sin, cos, tan|
+|8.12.|1| Lisätty testejä uusille toiminnoille: prosenttilasku, sin, cos, tan|
+|8.12.|5| Lisätty konfiguraatiot ja .env ja .env.test - tiedostot, korjattu testitietokanta itsenäiseksi|
+|yht |56|
