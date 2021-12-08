@@ -12,7 +12,7 @@ class CalculatorRepository:
         '''statistiikka'''
         cursor = self._connection.cursor()
         res_all=cursor.execute("select count(*) from operations ").fetchone()[0]
-        res = (0,0,0,0,0,0,0,0,0,0)
+        res = (0,0,0,0,0,0,0,0,0,0,0)
         if res_all != 0:
             res_add=cursor.execute("select count(*) from operations "
                                      " where operation='+'").fetchone()[0]
@@ -32,7 +32,9 @@ class CalculatorRepository:
                                      "where operation='cos'").fetchone()[0]
             res_tan=cursor.execute("select count(*) from operations "
                                      "where operation='tan'").fetchone()[0]
-            res = (res_all,res_add,res_sub,res_div,res_mul,res_sqrt,res_exp,res_sin,res_cos,res_tan)
+            res_percent=cursor.execute("select count(*) from operations "
+                                     "where operation='percent'").fetchone()[0]
+            res = (res_all,res_add,res_sub,res_div,res_mul,res_sqrt,res_exp,res_sin,res_cos,res_tan,res_percent)
         return res
 
     def add_operation(self,operator:str):
