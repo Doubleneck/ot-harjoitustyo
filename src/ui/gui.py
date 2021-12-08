@@ -25,44 +25,52 @@ class GUI:
         button_4 = ttk.Button(master=self._root,
         text="STAT",command=lambda: self._stat_button_click())
         button_5 = ttk.Button(master=self._root,
-        text="C",command=lambda: self._clear_button_click())
+        text="sin",command=lambda: self._stat_button_click())
         button_6 = ttk.Button(master=self._root,
-        text="+/-",command=lambda: self._negation_button_click())
+        text="cos",command=lambda: self._stat_button_click())
         button_7 = ttk.Button(master=self._root,
-        text="sq",command=lambda: self._one_operator_func_button_click("sqrt"))
+        text="tan",command=lambda: self._stat_button_click())
         button_8 = ttk.Button(master=self._root,
-        text="/",command=lambda: self._two_operator_func_button_click("/"))
+        text="%",command=lambda: self._stat_button_click())
         button_9 = ttk.Button(master=self._root,
-        text="7",command=lambda: self._number_button_click("7"))
+        text="C",command=lambda: self._clear_button_click())
         button_10 = ttk.Button(master=self._root,
-        text="8",command=lambda: self._number_button_click("8"))
+        text="+/-",command=lambda: self._negation_button_click())
         button_11 = ttk.Button(master=self._root,
-        text="9",command=lambda: self._number_button_click("9"))
+        text="sq",command=lambda: self._one_operator_func_button_click("sqrt"))
         button_12 = ttk.Button(master=self._root,
-        text="*",command=lambda: self._two_operator_func_button_click("*"))
+        text="/",command=lambda: self._two_operator_func_button_click("/"))
         button_13 = ttk.Button(master=self._root,
-        text="4",command=lambda: self._number_button_click("4"))
+        text="7",command=lambda: self._number_button_click("7"))
         button_14 = ttk.Button(master=self._root,
-        text="5",command=lambda: self._number_button_click("5"))
+        text="8",command=lambda: self._number_button_click("8"))
         button_15 = ttk.Button(master=self._root,
-        text="6",command=lambda: self._number_button_click("6"))
+        text="9",command=lambda: self._number_button_click("9"))
         button_16 = ttk.Button(master=self._root,
-        text="-",command=lambda: self._two_operator_func_button_click("-"))
+        text="*",command=lambda: self._two_operator_func_button_click("*"))
         button_17 = ttk.Button(master=self._root,
-        text="1", command=lambda: self._number_button_click("1"))
+        text="4",command=lambda: self._number_button_click("4"))
         button_18 = ttk.Button(master=self._root,
-        text="2",command=lambda: self._number_button_click("2"))
+        text="5",command=lambda: self._number_button_click("5"))
         button_19 = ttk.Button(master=self._root,
-        text="3",command=lambda: self._number_button_click("3"))
+        text="6",command=lambda: self._number_button_click("6"))
         button_20 = ttk.Button(master=self._root,
-        text="+",command=lambda: self._two_operator_func_button_click("+"))
+        text="-",command=lambda: self._two_operator_func_button_click("-"))
         button_21 = ttk.Button(master=self._root,
-        text="0",command=lambda: self._number_button_click("0"))
+        text="1", command=lambda: self._number_button_click("1"))
         button_22 = ttk.Button(master=self._root,
-        text=".",command=lambda: self._number_button_click("."))
+        text="2",command=lambda: self._number_button_click("2"))
         button_23 = ttk.Button(master=self._root,
-        text="exp",command=lambda: self._one_operator_func_button_click("exp"))
+        text="3",command=lambda: self._number_button_click("3"))
         button_24 = ttk.Button(master=self._root,
+        text="+",command=lambda: self._two_operator_func_button_click("+"))
+        button_25 = ttk.Button(master=self._root,
+        text="0",command=lambda: self._number_button_click("0"))
+        button_26 = ttk.Button(master=self._root,
+        text=".",command=lambda: self._number_button_click("."))
+        button_27 = ttk.Button(master=self._root,
+        text="exp",command=lambda: self._one_operator_func_button_click("exp"))
+        button_28 = ttk.Button(master=self._root,
         text="=",command=lambda: self._equation_button_click())
 
         calculator_screen.grid(row=0,column=0,columnspan=4,sticky=(constants.E))
@@ -90,6 +98,10 @@ class GUI:
         button_22.grid(row=6, column=1)
         button_23.grid(row=6, column=2)
         button_24.grid(row=6, column=3)
+        button_25.grid(row=7, column=0)
+        button_26.grid(row=7, column=1)
+        button_27.grid(row=7, column=2)
+        button_28.grid(row=7, column=3)
 
     def _number_button_click(self,num):
         dot = "."
