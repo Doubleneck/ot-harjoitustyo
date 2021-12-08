@@ -2,7 +2,7 @@
 
 ## Sovelluksen tarkoitus
 
-Sovellus on työpöytälaskin, jolla voi laskea yleisiä yksinkertaisia laskutoimituksia, kuten yhteen-, vähennys, jako-, kertolaskuja sekä nelijöjuuria ja potensseja.
+Sovellus on työpöytälaskin, jolla voi laskea yleisiä yksinkertaisia laskutoimituksia, kuten yhteen-, vähennys, jako-, kertolaskuja sekä nelijöjuuria ja potensseja, sekä prosenttilaskuja ja trigonometrisia funktioita.
 Lisäksi sovellus tallentaa tietokantaan tilastoa, kuinka paljon mitäkin laskutoimitusta suoritetaan.
 
 ## Käyttäjät
