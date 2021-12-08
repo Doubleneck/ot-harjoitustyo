@@ -74,6 +74,8 @@ class CalculatorService:
             self.operand1 = OperationsService.exp_func(self,self.operand1)
         if operator == "sqrt":
             self.operand1 = OperationsService.sqrt_func(self,self.operand1)
+        if operator == "sin":
+            self.operand1 = OperationsService.sin_func(self,self.operand1)    
         return self.operand1
 
     def get_stats(self):

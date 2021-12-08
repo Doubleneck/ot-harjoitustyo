@@ -26,3 +26,6 @@ class OperationsService:
         if float(number1) >= 0:
             ret = str(sqrt(float(number1)))
         return ret
+
+    def sin_func(self, number1:str):
+        return str(math.sin(math.radians(float(number1))))
