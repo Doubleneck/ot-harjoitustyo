@@ -31,7 +31,7 @@ class GUI:
         button_7 = ttk.Button(master=self._root,
         text="tan",command=lambda: self._one_operator_func_button_click("tan"))
         button_8 = ttk.Button(master=self._root,
-        text="%",command=lambda: self._stat_button_click())
+        text="%",command=lambda: self._two_operator_func_button_click("percent"))
         button_9 = ttk.Button(master=self._root,
         text="C",command=lambda: self._clear_button_click())
         button_10 = ttk.Button(master=self._root,

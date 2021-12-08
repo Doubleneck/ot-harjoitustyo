@@ -18,6 +18,9 @@ class OperationsService:
             ret = str(float(number1) / float(number2))
         return ret
 
+    def percent_func(self, number1:str, number2:str):
+        return str((float(number2)/100)*float(number1))
+
     def exp_func(self, number1:str):
         return str(float(number1) * float(number1))
 
