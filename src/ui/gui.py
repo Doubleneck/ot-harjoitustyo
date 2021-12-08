@@ -159,7 +159,7 @@ class GUI:
 
     def _stat_button_click(self):
         res=self.calculator.get_stats()
-        if res == (0,0,0,0,0,0,0):
+        if res == (0,0,0,0,0,0,0,0,0,0):
             print("Ei laskettuja laskutoimituksia")
         else:
             add=format(int(res[1])*100/int(res[0]),".1f")
@@ -168,6 +168,9 @@ class GUI:
             mul=format(int(res[4])*100/int(res[0]),".1f")
             sqrt=format(int(res[5])*100/int(res[0]),".1f")
             exp=format(int(res[6])*100/int(res[0]),".1f")
+            sin=format(int(res[7])*100/int(res[0]),".1f")
+            cos=format(int(res[8])*100/int(res[0]),".1f")
+            tan=format(int(res[9])*100/int(res[0]),".1f")
             print("***********LASKUTILASTOT************")
             print ("operaatiota '+' laskettu " + str(res[1]) +
                    " kertaa, "+ str(add) + "% kaikista")
@@ -181,6 +184,12 @@ class GUI:
                    " kertaa, "+ str(sqrt) + "% kaikista")
             print ("operaatiota 'exp' laskettu " + str(res[6]) +
                    " kertaa, "+ str(exp) + "% kaikista")
+            print ("operaatiota 'sin' laskettu " + str(res[7]) +
+                   " kertaa, "+ str(exp) + "% kaikista")
+            print ("operaatiota 'cos' laskettu " + str(res[8]) +
+                   " kertaa, "+ str(exp) + "% kaikista")
+            print ("operaatiota 'tan' laskettu " + str(res[9]) +
+                   " kertaa, "+ str(exp) + "% kaikista")       
             print ("Yhteensä " + str(res[0])  + " laskua suoritettu")
         self._clear_button_click()
 
