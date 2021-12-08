@@ -1,3 +1,5 @@
+
+
 class CalculatorRepository:
     """ Tietokantatallennuksesta vastaava luokka."""
 

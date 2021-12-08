@@ -1,22 +1,23 @@
 import unittest
 from services.calculator_service import CalculatorService
-from repositories.calculator_repository import CalculatorRepository
-#from repositories.calculator_repository import calculator_repository
-from test_database_connection import get_test_database_connection
+#from repositories.calculator_repository import CalculatorRepository
+from repositories.calculator_repository import calculator_repository
+#from test_database_connection import get_test_database_connection
 #import sqlite3 
 
 class TestCalculatorRepository(unittest.TestCase):
 
     def setUp(self):
-        connection = get_test_database_connection()
+ #       connection = get_test_database_connection()
 #        self.repository(connection)
 #        self.calculator = CalculatorService()
 #        connection = sqlite3.connect(":memory:")
-        self.repository = CalculatorRepository(connection)
-        self.repository.create_table_operations()
-        self.repository.delete_all()
-        self.calculator = CalculatorService()
-        self.calculator.set_operand1("16")
+        calculator_repository.delete_all()    
+#        self.repository = CalculatorRepository(connection)
+#        self.repository.create_table_operations()
+#        self.repository.delete_all()
+#        self.calculator = CalculatorService()
+#        self.calculator.set_operand1("16")
 
     def test_database_works_and_initialized_ok(self):
         self.assertEqual(self.repository.stats(), (0,0,0,0,0,0,0,0,0,0,0))
