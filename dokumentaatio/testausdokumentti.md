@@ -19,7 +19,7 @@ Testiluokassa alustetaan tietokannan taulu "operations" tyhjäksi datasta. Testi
 
 Käyttöliittymää GUI lukuunottamatta sovelluksen testauksen haarautumakattavuus on 97%.
 
-![](./kuvat/testikattavuus.png) 
+![](./kuvat/testiraportti.png) 
 
 UnitTestien ulkopuolelle jää initialize_database.py, joka on kuitenkin testattu komentoriviltä. 
 
