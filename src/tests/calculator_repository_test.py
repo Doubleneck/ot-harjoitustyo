@@ -39,6 +39,22 @@ class TestCalculatorRepository(unittest.TestCase):
         self.repository.add_operation("exp")
         self.assertEqual(self.repository.stats(), (1,0,0,0,0,0,1,0,0,0,0))
 
+    def test_database_sin_operation(self):
+        self.repository.add_operation("sin")
+        self.assertEqual(self.repository.stats(), (1,0,0,0,0,0,0,1,0,0,0))
+
+    def test_database_cos_operation(self):
+        self.repository.add_operation("cos")
+        self.assertEqual(self.repository.stats(), (1,0,0,0,0,0,0,0,1,0,0)) 
+
+    def test_database_tan_operation(self):
+        self.repository.add_operation("tan")
+        self.assertEqual(self.repository.stats(), (1,0,0,0,0,0,0,0,0,1,0))
+
+    def test_database_percent_operation(self):
+        self.repository.add_operation("percent")
+        self.assertEqual(self.repository.stats(), (1,0,0,0,0,0,0,0,0,0,1))  
+
     def test_delete_all_works(self):
         self.repository.add_operation("exp")
         self.repository.add_operation("sqrt")
