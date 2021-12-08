@@ -25,11 +25,11 @@ class GUI:
         button_4 = ttk.Button(master=self._root,
         text="STAT",command=lambda: self._stat_button_click())
         button_5 = ttk.Button(master=self._root,
-        text="sin",command=lambda: self._stat_button_click())
+        text="sin",command=lambda: self._one_operator_func_button_click("sin"))
         button_6 = ttk.Button(master=self._root,
-        text="cos",command=lambda: self._stat_button_click())
+        text="cos",command=lambda: self._one_operator_func_button_click("cos"))
         button_7 = ttk.Button(master=self._root,
-        text="tan",command=lambda: self._stat_button_click())
+        text="tan",command=lambda: self._one_operator_func_button_click("tan"))
         button_8 = ttk.Button(master=self._root,
         text="%",command=lambda: self._stat_button_click())
         button_9 = ttk.Button(master=self._root,

@@ -75,7 +75,11 @@ class CalculatorService:
         if operator == "sqrt":
             self.operand1 = OperationsService.sqrt_func(self,self.operand1)
         if operator == "sin":
-            self.operand1 = OperationsService.sin_func(self,self.operand1)    
+            self.operand1 = OperationsService.sin_func(self,self.operand1)
+        if operator == "cos":
+            self.operand1 = OperationsService.cos_func(self,self.operand1)
+        if operator == "tan":
+            self.operand1 = OperationsService.tan_func(self,self.operand1)        
         return self.operand1
 
     def get_stats(self):
