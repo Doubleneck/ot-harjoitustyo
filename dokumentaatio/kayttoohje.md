@@ -1,3 +1,11 @@
+# Konfiguraatiot
+
+Tallennukseen käytettävien tiedostojen nimet on konfiguroitu käynnistyshakemiston .env- ja .env.test -tiedostoihin. Tiedostot luodaan automaattisesti data-hakemistoon, jos niitä ei siellä vielä ole. Testejä varten luodaan varsinaisesta tietokannasta riippumaton testitietokanta, jonka polkunimi löytyy tiedostosta .env.test.
+
+Tiedoston muoto on:
+
+DATABASE_FILENAME=database.sqlite
+
 # Käyttöohje
 
 Lataa projektin [lähdekoodi](https://github.com/Doubleneck/ot-harjoitustyo) koneellesi valitsemalla Code -valikon takaa download.zip.
