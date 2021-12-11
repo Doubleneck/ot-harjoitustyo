@@ -19,10 +19,11 @@
 |28.11.|2| Muutettu services pakkauksen nimet mallin mukaisiksi, Calculator -> CalculatorService, jne. , koodin siivoamista Pylint|
 |29.11.|1| Lisätty luokkakaavio|
 |1.12.|6| Lisätty testiluokka tietokannalle, lisätty testejä, siivottu vanhan käyttöliittymä pois, lisätty laskimeen muistitoiminto|
-|1.12.|1| Lisätty sekvenssikaavio sqrt neg error arkkitehtuurikuvaukseen, Release 1, testattu Cublissa releasen toimivuus|
+|1.12.|1| Lisätty sekvenssikaavio sqrt neg error arkkitehtuurikuvaukseen, Release 1, testattu Cubblissa releasen toimivuus|
 |6.12.|1| Lisätty testausdokumentti, korjattu luokan TestCalculatorRepository nimi. Päivitetty readme.|
 |6.12.|1| Lisätty Docstring pääluokkiin|
 |8.12.|2| Lisätty uudet toiminnot: prosenttilasku, sin, cos, tan|
 |8.12.|1| Lisätty testejä uusille toiminnoille: prosenttilasku, sin, cos, tan|
 |8.12.|5| Lisätty konfiguraatiot ja .env ja .env.test - tiedostot, korjattu testitietokanta itsenäiseksi|
-|yht |56|
+|11.12.|1| Uusi sekvenssikaavio sqrt neg error, päivitetty konfiguraatiot käyttöohjeeseen, release2, testattu Cubblissa release2:n toimivuus|
+|yht |57|
