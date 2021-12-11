@@ -1,6 +1,6 @@
 # Konfiguraatiot
 
-Tallennukseen käytettävien tiedostojen nimet on konfiguroitu käynnistyshakemiston .env- ja .env.test -tiedostoihin. Tiedostot luodaan automaattisesti data-hakemistoon, jos niitä ei siellä vielä ole. Testejä varten luodaa varsinaisesta tietokannasta riippumaton testitietokannan, jonka polkunimi löytyy tiedostosta .env.test.
+Tallennukseen käytettävien tiedostojen nimet on konfiguroitu käynnistyshakemiston .env- ja .env.test -tiedostoihin. Tiedostot luodaan automaattisesti data-hakemistoon, jos niitä ei siellä vielä ole. Testejä varten luodaan varsinaisesta tietokannasta riippumaton testitietokanta, jonka polkunimi löytyy tiedostosta .env.test.
 
 Tiedoston muoto on:
 
