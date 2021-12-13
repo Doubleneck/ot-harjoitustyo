@@ -26,4 +26,5 @@
 |8.12.|1| Lisätty testejä uusille toiminnoille: prosenttilasku, sin, cos, tan|
 |8.12.|5| Lisätty konfiguraatiot ja .env ja .env.test - tiedostot, korjattu testitietokanta itsenäiseksi|
 |11.12.|1| Uusi sekvenssikaavio sqrt neg error, päivitetty konfiguraatiot käyttöohjeeseen, release2, testattu Cubblissa release2:n toimivuus|
-|yht |57|
+|13.12.|1| Lisätty docstringsejä, lisätty testejä, koodin siivousta, valmistelu loppupalautusta varten|
+|yht |58|
