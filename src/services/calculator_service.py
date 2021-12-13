@@ -26,9 +26,16 @@ class CalculatorService:
         return self.operand1
 
     def set_operand1(self,number:str):
+        '''tallentaa luvun laskimen muistipaikkaan
+        
+        Args: 
+            number: merkkijonomuotoinen luku
+
+        '''
         self.operand1 = number
 
     def get_memory(self):
+        '''palauttaa laskimen muistipaikassa olevan luvun'''
         return self.memory
 
     def set_memory(self,number:str):

@@ -1,5 +1,3 @@
-
-
 class CalculatorRepository:
     """ Tietokantatallennuksesta vastaava luokka."""
 
@@ -11,7 +9,13 @@ class CalculatorRepository:
         cursor.execute("delete from operations")
 
     def stats(self):
-        '''statistiikka'''
+        '''Palauttaa statistiikan tehdyistä laskuoperaatioista
+        
+           Returns: Tuple, jossa ensimmäisenä kaikkien laskutoimitusten yhteismäärä, ja 
+           sen jälkeen lukumäärät eri suoritetuille laskutoimituksille järjestyksessä:
+           +,-,/,*,sqrt,exp,sin,cos,tan,percent.
+        
+        '''
         cursor = self._connection.cursor()
         res_all=cursor.execute("select count(*) from operations ").fetchone()[0]
         res = (0,0,0,0,0,0,0,0,0,0,0)
@@ -41,6 +45,8 @@ class CalculatorRepository:
         return res
 
     def add_operation(self,operator:str):
+        '''Lisää suoritetun laskutoimituksen tilastoon'''
+
         cursor = self._connection.cursor()
         cursor.execute("""
             INSERT INTO operations
