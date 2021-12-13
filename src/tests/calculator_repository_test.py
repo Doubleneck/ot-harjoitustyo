@@ -9,11 +9,19 @@ class TestCalculatorRepository(unittest.TestCase):
         connection = get_database_connection()
         self.repository = CalculatorRepository(connection)
         self.repository.delete_all()
-        self.calculator = CalculatorService()
-        self.calculator.set_operand1("16")
-
+   
     def test_database_works_and_initialized_ok(self):
         self.assertEqual(self.repository.stats(), (0,0,0,0,0,0,0,0,0,0,0))
+
+    def test_database_count_all_ok_if_empty(self):
+        count = self.repository.stats()[0]
+        self.assertEqual(count,0)    
+
+    def test_database_count_all_ok_if_two(self):
+        self.repository.add_operation("-")
+        self.repository.add_operation("percent")
+        count = self.repository.stats()[0]
+        self.assertEqual(count,2)          
 
     def test_database_add_operation(self):
         self.repository.add_operation("+")
@@ -71,3 +79,33 @@ class TestCalculatorRepository(unittest.TestCase):
         self.repository.add_operation("sqrt")
         self.repository.add_operation("exp")
         self.assertEqual(self.repository.stats(), (8,2,1,2,1,1,1,0,0,0,0))
+
+    def test_database_multiple_operations_2(self):
+        self.repository.add_operation("+")
+        self.repository.add_operation("-")
+        self.repository.add_operation("/")
+        self.repository.add_operation("*")
+        self.repository.add_operation("sqrt")
+        self.repository.add_operation("exp")
+        self.repository.add_operation("sin")
+        self.repository.add_operation("cos")
+        self.repository.add_operation("tan")
+        self.repository.add_operation("percent")
+        self.assertEqual(self.repository.stats(), (10,1,1,1,1,1,1,1,1,1,1))
+
+    def test_database_all_operations_delete_all(self):
+        self.repository.add_operation("+")
+        self.repository.add_operation("-")
+        self.repository.add_operation("/")
+        self.repository.add_operation("*")
+        self.repository.add_operation("sqrt")
+        self.repository.add_operation("exp")
+        self.repository.add_operation("sin")
+        self.repository.add_operation("cos")
+        self.repository.add_operation("tan")
+        self.repository.add_operation("percent")
+        self.repository.delete_all()
+        self.assertEqual(self.repository.stats(), (0,0,0,0,0,0,0,0,0,0,0))    
+    
+    def test_stats(self):
+        self.assertEqual(self.repository.stats(), (0,0,0,0,0,0,0,0,0,0,0))    
