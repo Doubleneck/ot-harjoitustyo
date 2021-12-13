@@ -1,6 +1,5 @@
 import unittest
 from repositories.calculator_repository import CalculatorRepository
-from services.calculator_service import CalculatorService
 from database_connection import get_database_connection
 
 class TestCalculatorRepository(unittest.TestCase):
@@ -9,19 +8,19 @@ class TestCalculatorRepository(unittest.TestCase):
         connection = get_database_connection()
         self.repository = CalculatorRepository(connection)
         self.repository.delete_all()
-   
+
     def test_database_works_and_initialized_ok(self):
         self.assertEqual(self.repository.stats(), (0,0,0,0,0,0,0,0,0,0,0))
 
     def test_database_count_all_ok_if_empty(self):
         count = self.repository.stats()[0]
-        self.assertEqual(count,0)    
+        self.assertEqual(count,0)
 
     def test_database_count_all_ok_if_two(self):
         self.repository.add_operation("-")
         self.repository.add_operation("percent")
         count = self.repository.stats()[0]
-        self.assertEqual(count,2)          
+        self.assertEqual(count,2)
 
     def test_database_add_operation(self):
         self.repository.add_operation("+")
@@ -105,7 +104,7 @@ class TestCalculatorRepository(unittest.TestCase):
         self.repository.add_operation("tan")
         self.repository.add_operation("percent")
         self.repository.delete_all()
-        self.assertEqual(self.repository.stats(), (0,0,0,0,0,0,0,0,0,0,0))    
-    
+        self.assertEqual(self.repository.stats(), (0,0,0,0,0,0,0,0,0,0,0))
+
     def test_stats(self):
-        self.assertEqual(self.repository.stats(), (0,0,0,0,0,0,0,0,0,0,0))    
+        self.assertEqual(self.repository.stats(), (0,0,0,0,0,0,0,0,0,0,0))

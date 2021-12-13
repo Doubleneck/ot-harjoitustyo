@@ -27,8 +27,8 @@ class CalculatorService:
 
     def set_operand1(self,number:str):
         '''tallentaa luvun laskimen muistipaikkaan
-        
-        Args: 
+
+        Args:
             number: merkkijonomuotoinen luku
 
         '''
