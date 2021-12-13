@@ -49,7 +49,7 @@ class CalculatorService:
             operator:
                 Merkkijono tai merkki, joka kuvaa operaatiota.
             operand2:
-                Jälkimmäinen operandi.
+                Merkkijonomuotoinen jälkimmäinen operandi.
         """
 
         if self.operand1 == "":
