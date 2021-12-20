@@ -1,8 +1,7 @@
 # Ohjelmistotekniikan harjoitustyö:laskin
 
 Sovellus on työpöytälaskin graafisella käyttöliittymällä. 
-[Release_1 viikko6](https://github.com/Doubleneck/ot-harjoitustyo/releases/tag/viikko6)
-[Release_1 viikko5](https://github.com/Doubleneck/ot-harjoitustyo/releases/tag/Viikko5)  
+ 
 ##  Python-versio:
 
 Sovelluksen toiminta on testattu Python-versiolla `3.8`.
